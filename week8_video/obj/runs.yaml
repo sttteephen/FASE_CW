@@ -1,0 +1,308 @@
+'2023-05-02T18:21:11.815000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    gprbuild: "mode=gold" was not found in the sources of any project
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T18:21:11.815000'
+'2023-05-02T18:22:28.644000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    gprbuild: "mode=silver" was not found in the sources of any project
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T18:22:28.644000'
+'2023-05-02T18:25:04.312000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in H:\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T18:25:04.312000'
+'2023-05-02T18:49:54.569000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    increment.adb:7:16: medium: range check might fail [reason for check: returned
+    value must fit in the result type of the function] [possible fix: subprogram at
+    increment.ads:6 should mention x in a precondition][#0]
+
+    Summary logged in H:\FASE_CW\week8_video\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T18:49:54.569000'
+'2023-05-02T18:52:12.900000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in H:\FASE_CW\week8_video\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T18:52:12.900000'
+'2023-05-02T18:53:55.253000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    increment.ads:8:28: error: missing ","
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T18:53:55.253000'
+'2023-05-02T18:54:37.237000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in H:\FASE_CW\week8_video\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T18:54:37.237000'
+'2023-05-02T18:55:12.088000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in H:\FASE_CW\week8_video\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T18:55:12.088000'
+'2023-05-02T18:55:56.367000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in H:\FASE_CW\week8_video\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T18:55:56.367000'
+'2023-05-02T18:56:52.439000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    increment.ads:9:12: medium: postcondition might fail[#0]
+
+    Summary logged in H:\FASE_CW\week8_video\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T18:56:52.439000'
+'2023-05-02T19:02:23.506000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    increment.ads:9:12: medium: postcondition might fail[#0]
+
+    Summary logged in H:\FASE_CW\week8_video\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T19:02:23.506000'
+'2023-05-02T19:02:42.152000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in H:\FASE_CW\week8_video\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T19:02:42.152000'
+'2023-05-02T19:28:55.140000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    increment.ads:21:14: error: no space allowed here
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T19:28:55.140000'
+'2023-05-02T19:29:10.805000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    increment.adb:16:13: error: not fully conformant with declaration at increment.ads:19
+
+    increment.adb:16:13: error: mode of "x" does not match
+
+    increment.ads:21:16: error: attribute "result" can only appear in postcondition
+    of function
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T19:29:10.805000'
+'2023-05-02T19:29:34.634000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    increment.adb:16:04: error: missing "return" statement in function body
+
+    increment.adb:20:12: error: assignment to "in" mode parameter not allowed
+
+    increment.adb:21:12: error: assignment to "in" mode parameter not allowed
+
+    increment.ads:21:16: error: attribute "result" can only appear in postcondition
+    of function
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T19:29:34.634000'
+'2023-05-02T19:29:57.797000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    increment.adb:20:20: error: missing ";"
+
+    increment.adb:21:20: error: missing ";"
+
+    increment.ads:21:16: error: attribute "result" can only appear in postcondition
+    of function
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T19:29:57.797000'
+'2023-05-02T19:30:26.859000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    increment.ads:21:16: error: attribute "result" can only appear in postcondition
+    of function
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T19:30:26.859000'
+'2023-05-02T19:31:12.202000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in H:\FASE_CW\week8_video\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T19:31:12.202000'
+'2023-05-02T19:35:05.307000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    increment.ads:27:16: medium: postcondition might fail[#0]
+
+    Summary logged in H:\FASE_CW\week8_video\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T19:35:05.307000'
+'2023-05-02T19:35:33.681000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\week8_video\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in H:\FASE_CW\week8_video\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T19:35:33.681000'

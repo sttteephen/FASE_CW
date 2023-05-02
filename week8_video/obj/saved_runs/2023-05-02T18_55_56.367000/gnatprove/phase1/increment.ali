@@ -1,0 +1,33 @@
+V "GNAT Lib v2021"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U increment%b		increment.adb		5a587d76 OO PK IL
+
+U increment%s		increment.ads		1d15a28d OO PK IL
+
+D increment.ads		20230502175554 1d15a28d increment%s
+D increment.adb		20230502175510 474ddffb increment%b
+D system.ads		20210520051134 2ffa5114 system%s
+G a Z
+X 1 increment.ads
+1K9*increment 12l5 12e14 2|1b14 10l5 10t14
+4I9*Tens<short_short_integer> 6r27 6r40 8r19 2|4r27 4r40
+6V13*bad_incr{4I9} 6>23 9r12 2|4b13 8l8 8t16
+6i23 x{4I9} 8r15 9r30 2|4b23 7r14
+
+QQ SPARKVERSION SPARK Community 2021 (20210519)
+GG EK_DIRECT_CALLS increment__bad_incr 0
+GG EK_GLOBALS increment__bad_incr local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 increment proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS increment 0
+GG EK_GLOBALS increment local FALSE E_PACKAGE TRUE ORIGIN_FLOW 0 proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 refined_initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_FLOW_SCOPE increment__bad_incr FALSE FALSE FALSE FALSE TRUE increment VISIBLE_PART
+GG EK_FLOW_SCOPE increment TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_END_MARKER

@@ -1,0 +1,3 @@
+increment.adb:16:13: error: not fully conformant with declaration at increment.ads:19
+increment.adb:16:13: error: mode of "x" does not match
+increment.ads:21:16: error: attribute "result" can only appear in postcondition of function

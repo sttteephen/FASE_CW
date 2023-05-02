@@ -1,0 +1,157 @@
+module Increment__flip__x
+  use _gnatprove_standard.Main
+  use int.Int
+  
+  val function x : int
+end
+
+module Increment__flipbit
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  
+  type flipbit = <range 0 1>
+  
+  val function first : int
+    ensures { result = (0 : int) }
+  
+  val function last : int
+    ensures { result = (1 : int) }
+  
+  predicate in_range (x: int) = ((first <= x) /\ (x <= last))
+  
+  val in_range (x: int) : bool
+    ensures { result <-> (in_range (x : int)) }
+  
+  clone export ada__model.Static_Discrete with
+    axiom .,
+    type t = flipbit,
+    function first = first,
+    function last = last,
+    predicate in_range = in_range
+  
+  type flipbit__ref = { mutable flipbit__content : flipbit }
+  
+  function flipbit__ref_flipbit__content__projection (a: flipbit__ref) : flipbit =
+    a.flipbit__content
+  
+  meta "model_projection" function flipbit__ref_flipbit__content__projection
+  
+  meta "inline:no" function flipbit__ref_flipbit__content__projection
+  
+  val flipbit__havoc (x: flipbit__ref) : unit
+    writes { x }
+end
+
+module Increment__flipbit___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use Increment__flipbit as Increment__flipbit
+  
+  predicate dynamic_invariant (temp___expr_175: int) (temp___is_init_171: bool) (temp___skip_constant_172: bool) (temp___do_toplevel_173: bool) (temp___do_typ_inv_174: bool) =
+    if ((temp___is_init_171 = True) \/
+          (Increment__flipbit.first <= Increment__flipbit.last)) then
+      (((Increment__flipbit.dynamic_property Increment__flipbit.first)
+          Increment__flipbit.last)
+         temp___expr_175)
+    else true
+  
+  val dynamic_invariant (temp___expr_175: int) (temp___is_init_171: bool) (temp___skip_constant_172: bool) (temp___do_toplevel_173: bool) (temp___do_typ_inv_174: bool) : 
+    bool
+    ensures { result
+                <->
+                (((((dynamic_invariant (temp___expr_175 : int))
+                      (temp___is_init_171 : bool))
+                     (temp___skip_constant_172 : bool))
+                    (temp___do_toplevel_173 : bool))
+                   (temp___do_typ_inv_174 : bool)) }
+  
+  predicate default_initial_assumption (temp___expr_176: int) (temp___skip_top_level_177: bool) =
+    true
+  
+  val default_initial_assumption (temp___expr_176: int) (temp___skip_top_level_177: bool) : 
+    bool
+    ensures { result
+                <->
+                ((default_initial_assumption (temp___expr_176 : int))
+                   (temp___skip_top_level_177 : bool)) }
+end
+
+module Increment__flip__x___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+end
+
+module Increment__flip__subprogram_def
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use _gnatprove_standard.Main as Main
+  use Increment__flip__x as Increment__flip__x
+  use Increment__flipbit___axiom as Increment__flipbit___axiom
+  use Increment__flipbit___axiom as Increment__flipbit___axiom
+  use Increment__flip__x___axiom as Increment__flip__x___axiom
+  
+  val increment__flip__result : int__ref
+  
+  let def (__void_param : unit)
+    requires { [#"increment.ads" 19 0 0] true }
+    ensures { [#"increment.ads" 19 0 0]
+              [#"increment.ads" 21 0 0]
+              [@GP_Reason:VC_POSTCONDITION]
+              [@comment:       Post => flip'Result /= x;                ^ increment.ads:21:16:VC_POSTCONDITION]
+              [@GP_Shape:pragargs__cmp]
+              [@GP_Sloc:increment.ads:21:16]
+              [@model_vc_post]
+              [@GP_Id:4]
+              [@GP_Pretty_Ada:1079]
+              [@GP_Sloc:increment.ads:21:16]
+              ((increment__flip__result.int__content)
+                 <> Increment__flip__x.x) }
+  = [@vc:divergent]
+    (([@GNAT-comment:Assume dynamic invariants of inputs of the subprogram increment.ads:19]
+      ());
+     assume {
+       ((((Increment__flipbit___axiom.dynamic_invariant Increment__flip__x.x)
+            True)
+           False)
+          True)
+         True };
+     ([@GNAT-comment:Assume moved pointers in outputs of the subprogram increment.ads:19]
+      ());
+     ([@GNAT-comment:Check for RTE in the Pre of the subprogram increment.ads:19]
+      ());
+     ([@GNAT-comment:Assume Pre of the subprogram increment.ads:19] ());
+     (try
+        ([@GP_Sloc:increment.adb:19:7]
+         [#"increment.adb" 19 0 0]
+         (if (([#"increment.adb" 19 0 0]
+               [#"increment.adb" 19 0 0]
+               (([@branch_id=858] Main.spark__branch).bool__content <-
+                  (Increment__flip__x.x = (0 : int))));
+              (([@branch_id=858] Main.spark__branch).bool__content)) then
+            ([@GP_Sloc:increment.adb:20:12]
+             [#"increment.adb" 20 0 0]
+             (([#"increment.adb" 20 0 0]
+               (increment__flip__result.int__content <- (1 : int)));
+              ([#"increment.adb" 20 0 0] ((raise Return__exc) : unit))))
+          else
+            ([@GP_Sloc:increment.adb:21:12]
+             [#"increment.adb" 21 0 0]
+             (([#"increment.adb" 21 0 0]
+               (increment__flip__result.int__content <- (0 : int)));
+              ([#"increment.adb" 21 0 0] ((raise Return__exc) : unit))))));
+        (raise Return__exc)
+      with Return__exc -> ()
+      end);
+     (begin
+        ensures { true }
+        let _ =
+          let _ =
+            ((increment__flip__result.int__content) <> Increment__flip__x.x) in
+          () in
+        ()
+      end);
+     (increment__flip__result.int__content))
+end

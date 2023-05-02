@@ -1,0 +1,3 @@
+increment.adb:20:20: error: missing ";"
+increment.adb:21:20: error: missing ";"
+increment.ads:21:16: error: attribute "result" can only appear in postcondition of function

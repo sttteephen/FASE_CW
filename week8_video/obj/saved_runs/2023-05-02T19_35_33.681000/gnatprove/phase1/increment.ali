@@ -1,0 +1,50 @@
+V "GNAT Lib v2021"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U increment%b		increment.adb		5e831398 OO PK IL
+
+U increment%s		increment.ads		b6586da5 OO PK IL
+
+D increment.ads		20230502183530 b6586da5 increment%s
+D increment.adb		20230502183456 e8db7e3d increment%b
+D system.ads		20210520051134 2ffa5114 system%s
+G a Z
+X 1 increment.ads
+1K9*increment 31l5 31e14 2|1b14 31l5 31t14
+4I9*Tens<short_short_integer> 6r27 6r40 8r19 12r35 14r19 2|4r27 4r40 10r35
+6V13*bad_incr{4I9} 6>23 9r12 2|4b13 8l8 8t16
+6i23 x{4I9} 8r15 9r30 2|4b23 7r14
+12U14*bad_proc 12=25 2|10b14 14l8 14t16
+12i25 x{4I9} 14r15 15r16 15r20 2|10b24 13m7 13r12
+18I9*FlipBit<short_short_integer> 19r22 19r38 2|16r23 16r39
+19V13*flip{18I9} 19>19 21r16 2|16b13 23l8 23t12
+19i19 x{18I9} 21r31 2|16b19 19r11
+23I9*ZeroTen<short_short_integer> 24r28 24r44 26r19 2|25r28 25r44
+24V13*decrement{23I9} 24>24 27r16 2|25b13 29l8 29t17
+24i24 x{23I9} 26r15 27r39 2|25b24 28r14
+
+QQ SPARKVERSION SPARK Community 2021 (20210519)
+GG EK_DIRECT_CALLS increment__bad_incr 0
+GG EK_GLOBALS increment__bad_incr local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 increment proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS increment__bad_proc 0
+GG EK_GLOBALS increment__bad_proc local FALSE E_PROCEDURE FALSE ORIGIN_FLOW 1 increment proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS increment__flip 0
+GG EK_GLOBALS increment__flip local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 increment proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS increment__decrement 0
+GG EK_GLOBALS increment__decrement local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 increment proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS increment 0
+GG EK_GLOBALS increment local FALSE E_PACKAGE TRUE ORIGIN_FLOW 0 proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 refined_initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_FLOW_SCOPE increment__bad_incr FALSE FALSE FALSE FALSE TRUE increment VISIBLE_PART
+GG EK_FLOW_SCOPE increment__flip FALSE FALSE FALSE FALSE TRUE increment VISIBLE_PART
+GG EK_FLOW_SCOPE increment__decrement FALSE FALSE FALSE FALSE TRUE increment VISIBLE_PART
+GG EK_FLOW_SCOPE increment__bad_proc FALSE FALSE FALSE FALSE TRUE increment VISIBLE_PART
+GG EK_FLOW_SCOPE increment TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_END_MARKER

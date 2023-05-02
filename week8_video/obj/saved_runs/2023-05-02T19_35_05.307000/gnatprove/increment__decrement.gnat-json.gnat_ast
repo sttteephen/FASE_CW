@@ -1,0 +1,146 @@
+(* Module for defining the constant "x" defined at increment.ads:24, created in Gnat2Why.Decls.Translate_Constant *)
+module Increment__decrement__x
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  function [name:x] [model_trace:983] [sloc:increment.ads:24] x () requires
+    {  } ensures  {  } returns int
+
+end
+
+(* Module for axiomatizing type "zeroten" defined at increment.ads:23, created in Gnat2Why.Types.Translate_Type *)
+module Increment__zeroten
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type zeroten  = <range 0 10>
+  
+  function   first () requires { True } ensures  { True } returns int = 0
+  
+  function   last () requires { True } ensures  { True } returns int = 10
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = zeroten,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type zeroten__ref  = { mutable zeroten__content : zeroten }
+  
+  function   zeroten__ref_zeroten__content__projection (a : zeroten__ref)
+    requires {  } ensures  {  } returns zeroten = a.zeroten__content
+  
+  meta model_projection function zeroten__ref_zeroten__content__projection
+  
+  meta inline:no function zeroten__ref_zeroten__content__projection
+  
+  function   zeroten__havoc (x : zeroten__ref) requires {  } ensures  {  }
+    returns unit
+
+end
+
+(* Module giving axioms for type "zeroten" defined at increment.ads:23, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Increment__zeroten___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Increment__zeroten
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_182) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_178) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_179) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_180) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_181) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_178) = True) \/
+          (Increment__zeroten.first <= Increment__zeroten.last))
+       then
+       (Increment__zeroten.dynamic_property Increment__zeroten.first
+          Increment__zeroten.last ([mlw:proxy_symbol]
+          [introduced] temp___expr_182))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_183) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_184) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving an empty axiom for the entity "x" defined at increment.ads:24, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Increment__decrement__x___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "decrement" defined at increment.ads:24, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Increment__decrement__subprogram_def
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Increment__decrement__x
+  use        Increment__zeroten
+  use        Increment__zeroten___axiom
+  use        Increment__zeroten___axiom
+  use        Increment__decrement__x___axiom
+  
+  val increment__decrement__result [model_projected] [name:decrement]
+  [model_trace:982@result] : int
+  
+  function [GP_Subp:increment.ads:24] [sloc:increment.ads:24] def
+    (__void_param : unit) requires { True } ensures 
+    { ([sloc:increment.ads:27] ([GP_Reason:VC_POSTCONDITION]
+                               [GP_Shape:pragargs__cmp]
+                               [comment:       Post => decrement'Result = x + 1;                ^ increment.ads:27:16:VC_POSTCONDITION]
+                               [model_vc_post] [GP_Sloc:increment.ads:27:16]
+                               [GP_Id:6] ([GP_Pretty_Ada:1107]
+                                         [GP_Sloc:increment.ads:27:16] (
+                                         !increment__decrement__result
+                                           = (Increment__decrement__x.x + 1))))) }
+    returns
+     = (* Assume dynamic invariants of inputs of the subprogram increment.ads:24 *);
+        assume
+        { (Increment__zeroten___axiom.dynamic_invariant
+             Increment__decrement__x.x True False True True) };
+        (* Assume moved pointers in outputs of the subprogram increment.ads:24 *);
+        (* Check for RTE in the Pre of the subprogram increment.ads:24 *);
+        abstract ensures
+        { True } begin  (let _ = (Increment__decrement__x.x > 0) in ())  end;
+        (* Assume Pre of the subprogram increment.ads:24 *);
+        assume
+        { ([GP_Pretty_Ada:1094] (Increment__decrement__x.x > 0)) };
+        (try
+        ();
+          ([GP_Sloc:increment.adb:28:7] ([sloc:increment.adb:28] (
+                                        increment__decrement__result :=
+                                        ( ([sloc:increment.adb:28] ([GP_Shape:return__sub]
+                                                                   [vc:annotation]
+                                                                   [comment:      return x - 1;                ^ increment.adb:28:16:VC_RANGE_CHECK]
+                                                                   [GP_Sloc:increment.adb:28:16]
+                                                                   [GP_Reason:VC_RANGE_CHECK]
+                                                                   [GP_Id:5] (
+                                                                   Increment__zeroten.range_check_
+                                                                    (Increment__decrement__x.x
+                                                                    - 1))))));
+                                        raise Return__exc));
+          raise Return__exc with | Return__exc  -> ());
+        abstract ensures
+        { True } begin  (let _ =
+                       (!increment__decrement__result
+                          = (Increment__decrement__x.x + 1))
+                       in ())  end;
+        !increment__decrement__result
+
+end

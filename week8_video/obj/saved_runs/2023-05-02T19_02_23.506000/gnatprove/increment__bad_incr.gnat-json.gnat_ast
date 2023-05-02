@@ -1,0 +1,146 @@
+(* Module for defining the constant "x" defined at increment.ads:6, created in Gnat2Why.Decls.Translate_Constant *)
+module Increment__bad_incr__x
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  function [name:x] [model_trace:871] [sloc:increment.ads:6] x () requires
+    {  } ensures  {  } returns int
+
+end
+
+(* Module for axiomatizing type "tens" defined at increment.ads:4, created in Gnat2Why.Types.Translate_Type *)
+module Increment__tens
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type tens  = <range 1 10>
+  
+  function   first () requires { True } ensures  { True } returns int = 1
+  
+  function   last () requires { True } ensures  { True } returns int = 10
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = tens,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type tens__ref  = { mutable tens__content : tens }
+  
+  function   tens__ref_tens__content__projection (a : tens__ref) requires
+    {  } ensures  {  } returns tens = a.tens__content
+  
+  meta model_projection function tens__ref_tens__content__projection
+  
+  meta inline:no function tens__ref_tens__content__projection
+  
+  function   tens__havoc (x : tens__ref) requires {  } ensures  {  } returns
+    unit
+
+end
+
+(* Module giving axioms for type "tens" defined at increment.ads:4, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Increment__tens___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Increment__tens
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_166) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_162) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_163) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_164) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_165) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_162) = True) \/
+          (Increment__tens.first <= Increment__tens.last))
+       then
+       (Increment__tens.dynamic_property Increment__tens.first
+          Increment__tens.last ([mlw:proxy_symbol]
+          [introduced] temp___expr_166))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_167) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_168) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving an empty axiom for the entity "x" defined at increment.ads:6, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Increment__bad_incr__x___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "bad_incr" defined at increment.ads:6, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Increment__bad_incr__subprogram_def
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Increment__bad_incr__x
+  use        Increment__tens
+  use        Increment__tens___axiom
+  use        Increment__tens___axiom
+  use        Increment__bad_incr__x___axiom
+  
+  val increment__bad_incr__result [name:bad_incr] [model_projected]
+  [model_trace:870@result] : int
+  
+  function [GP_Subp:increment.ads:6] [sloc:increment.ads:6] def
+    (__void_param : unit) requires { True } ensures 
+    { ([sloc:increment.ads:9] ([GP_Reason:VC_POSTCONDITION]
+                              [GP_Shape:pragargs__cmp]
+                              [comment:   Post => bad_incr'Result = x + 1;            ^ increment.ads:9:12:VC_POSTCONDITION]
+                              [model_vc_post] [GP_Id:1]
+                              [GP_Sloc:increment.ads:9:12] ([GP_Pretty_Ada:950]
+                                                           [GP_Sloc:increment.ads:9:12] (
+                                                           !increment__bad_incr__result
+                                                             = (Increment__bad_incr__x.x
+                                                                  + 1))))) }
+    returns
+     = (* Assume dynamic invariants of inputs of the subprogram increment.ads:6 *);
+        assume
+        { (Increment__tens___axiom.dynamic_invariant Increment__bad_incr__x.x
+             True False True True) };
+        (* Assume moved pointers in outputs of the subprogram increment.ads:6 *);
+        (* Check for RTE in the Pre of the subprogram increment.ads:6 *);
+        abstract ensures
+        { True } begin  (let _ = (Increment__bad_incr__x.x < 9) in ())  end;
+        (* Assume Pre of the subprogram increment.ads:6 *);
+        assume { ([GP_Pretty_Ada:937] (Increment__bad_incr__x.x < 9)) };
+        (try
+        ();
+          ([GP_Sloc:increment.adb:7:7] ([sloc:increment.adb:7] (
+                                       increment__bad_incr__result :=
+                                       ( ([sloc:increment.adb:7] ([vc:annotation]
+                                                                 [comment:      return x + 2;                ^ increment.adb:7:16:VC_RANGE_CHECK]
+                                                                 [GP_Reason:VC_RANGE_CHECK]
+                                                                 [GP_Shape:return__add]
+                                                                 [GP_Id:0]
+                                                                 [GP_Sloc:increment.adb:7:16] (
+                                                                 Increment__tens.range_check_
+                                                                   (Increment__bad_incr__x.x
+                                                                    + 2))))));
+                                       raise Return__exc));
+          raise Return__exc with | Return__exc  -> ());
+        abstract ensures
+        { True } begin  (let _ =
+                       (!increment__bad_incr__result
+                          = (Increment__bad_incr__x.x + 1))
+                       in ())  end;
+        !increment__bad_incr__result
+
+end

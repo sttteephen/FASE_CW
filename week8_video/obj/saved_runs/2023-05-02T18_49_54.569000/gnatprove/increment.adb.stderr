@@ -1,0 +1,1 @@
+increment.adb:7:16: medium: range check might fail [reason for check: returned value must fit in the result type of the function] [possible fix: subprogram at increment.ads:6 should mention x in a precondition][#0]

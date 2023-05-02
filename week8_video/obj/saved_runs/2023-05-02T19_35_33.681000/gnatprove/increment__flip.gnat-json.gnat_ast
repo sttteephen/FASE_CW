@@ -1,0 +1,154 @@
+(* Module for defining the constant "x" defined at increment.ads:19, created in Gnat2Why.Decls.Translate_Constant *)
+module Increment__flip__x
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  function [model_trace:962] [name:x] [sloc:increment.ads:19] x () requires
+    {  } ensures  {  } returns int
+
+end
+
+(* Module for axiomatizing type "flipbit" defined at increment.ads:18, created in Gnat2Why.Types.Translate_Type *)
+module Increment__flipbit
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type flipbit  = <range 0 1>
+  
+  function   first () requires { True } ensures  { True } returns int = 0
+  
+  function   last () requires { True } ensures  { True } returns int = 1
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = flipbit,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type flipbit__ref  = { mutable flipbit__content : flipbit }
+  
+  function   flipbit__ref_flipbit__content__projection (a : flipbit__ref)
+    requires {  } ensures  {  } returns flipbit = a.flipbit__content
+  
+  meta model_projection function flipbit__ref_flipbit__content__projection
+  
+  meta inline:no function flipbit__ref_flipbit__content__projection
+  
+  function   flipbit__havoc (x : flipbit__ref) requires {  } ensures  {  }
+    returns unit
+
+end
+
+(* Module giving axioms for type "flipbit" defined at increment.ads:18, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Increment__flipbit___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Increment__flipbit
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_175) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_171) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_172) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_173) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_174) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_171) = True) \/
+          (Increment__flipbit.first <= Increment__flipbit.last))
+       then
+       (Increment__flipbit.dynamic_property Increment__flipbit.first
+          Increment__flipbit.last ([mlw:proxy_symbol]
+          [introduced] temp___expr_175))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_176) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_177) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving an empty axiom for the entity "x" defined at increment.ads:19, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Increment__flip__x___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "flip" defined at increment.ads:19, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Increment__flip__subprogram_def
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        _gnatprove_standard.Main
+  use        Increment__flip__x
+  use        Increment__flipbit___axiom
+  use        Increment__flipbit___axiom
+  use        Increment__flip__x___axiom
+  
+  val increment__flip__result [model_projected] [model_trace:961@result]
+  [name:flip] : int
+  
+  function [GP_Subp:increment.ads:19] [sloc:increment.ads:19] def
+    (__void_param : unit) requires { True } ensures 
+    { ([sloc:increment.ads:21] ([GP_Reason:VC_POSTCONDITION]
+                               [comment:       Post => flip'Result /= x;                ^ increment.ads:21:16:VC_POSTCONDITION]
+                               [GP_Shape:pragargs__cmp]
+                               [GP_Sloc:increment.ads:21:16] [model_vc_post]
+                               [GP_Id:4] ([GP_Pretty_Ada:1079]
+                                         [GP_Sloc:increment.ads:21:16] (
+                                         !increment__flip__result
+                                           <> Increment__flip__x.x)))) }
+    returns
+     = (* Assume dynamic invariants of inputs of the subprogram increment.ads:19 *);
+        assume
+        { (Increment__flipbit___axiom.dynamic_invariant Increment__flip__x.x
+             True False True True) };
+        (* Assume moved pointers in outputs of the subprogram increment.ads:19 *);
+        (* Check for RTE in the Pre of the subprogram increment.ads:19 *);
+        abstract ensures
+        { True } begin  (let _ = True in ())  end;
+        (* Assume Pre of the subprogram increment.ads:19 *);
+        (try
+        ();
+          ([GP_Sloc:increment.adb:19:7] ([sloc:increment.adb:19] (if
+                                                                 ([sloc:increment.adb:19] ([branch_id=858]
+                                                                 _gnatprove_standard.Main.spark__branch
+                                                                 :=
+                                                                 (Increment__flip__x.x
+                                                                    = 0)));
+                                                                 ([branch_id=858] _gnatprove_standard.Main.spark__branch).bool__content
+                                                                 then
+                                                                 ();
+                                                                 ([GP_Sloc:increment.adb:20:12] 
+                                                                 ([sloc:increment.adb:20] (
+                                                                 increment__flip__result
+                                                                 :=
+                                                                 ( 1));
+                                                                 raise Return__exc))
+                                                                  else
+                                                                 ();
+                                                                 ([GP_Sloc:increment.adb:21:12] 
+                                                                 ([sloc:increment.adb:21] (
+                                                                 increment__flip__result
+                                                                 :=
+                                                                 ( 0));
+                                                                 raise Return__exc)))));
+          raise Return__exc with | Return__exc  -> ());
+        abstract ensures
+        { True } begin  (let _ =
+                       (!increment__flip__result <> Increment__flip__x.x) in
+                       ())  end;
+        !increment__flip__result
+
+end

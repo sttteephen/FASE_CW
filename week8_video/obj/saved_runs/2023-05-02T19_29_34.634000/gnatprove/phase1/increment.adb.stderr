@@ -1,0 +1,4 @@
+increment.adb:16:04: error: missing "return" statement in function body
+increment.adb:20:12: error: assignment to "in" mode parameter not allowed
+increment.adb:21:12: error: assignment to "in" mode parameter not allowed
+increment.ads:21:16: error: attribute "result" can only appear in postcondition of function

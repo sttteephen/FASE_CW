@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>H:\FASE_CW\video_example1\src\levels.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>H:\FASE_CW\video_example1\src\levels.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 4" line=" 3" >
+      <vfs_project>H:\FASE_CW\week8_video\increment.gpr</vfs_project>
+      <vfs_file>H:\FASE_CW\week8_video\src\increment.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

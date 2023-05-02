@@ -1,0 +1,7 @@
+20230502180222
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=H:\FASE_CW\week8_video\obj\gnatprove\aa176a6a.tmp
