@@ -16,6 +16,7 @@ is
    
    
    type FlipBit is range 0..1;
+   
    function flip (x: FlipBit) return FlipBit
      with
        Post => flip'Result /= x;
