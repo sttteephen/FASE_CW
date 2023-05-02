@@ -1,0 +1,2 @@
+levels.adb:7:13: medium: overflow check might fail [reason for check: result of addition must fit in a 32-bits machine integer] [possible fix: subprogram at levels.ads:4 should mention n in a precondition][#0]
+levels.adb:7:23: medium: overflow check might fail [reason for check: result of addition must fit in a 32-bits machine integer] [possible fix: subprogram at levels.ads:4 should mention s in a precondition][#1]

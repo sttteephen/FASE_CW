@@ -1,0 +1,1 @@
+levels.adb:7:22: warning: "s" may be referenced before it has a value [enabled by default]

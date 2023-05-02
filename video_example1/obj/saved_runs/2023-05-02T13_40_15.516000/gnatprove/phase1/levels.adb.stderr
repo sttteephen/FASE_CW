@@ -1,0 +1,2 @@
+levels.ads:5:06: error: parameter "n" is missing from output dependence list
+levels.ads:5:24: error: write-only parameter "s" cannot appear as input in dependence relation

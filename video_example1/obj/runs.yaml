@@ -1,0 +1,320 @@
+'2023-05-02T13:37:45.813000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: full checking of SPARK legality rules ...
+
+    levels.adb:7:22: warning: "s" may be referenced before it has a value [enabled
+    by default]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:37:45.813000'
+'2023-05-02T13:38:01.485000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    levels.adb:7:25: error: missing ";"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:38:01.485000'
+'2023-05-02T13:39:02.112000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: full checking of SPARK legality rules ...
+
+    levels.adb:7:22: warning: "s" may be referenced before it has a value [enabled
+    by default]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:39:02.112000'
+'2023-05-02T13:40:15.516000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    levels.ads:5:06: error: parameter "n" is missing from output dependence list
+
+    levels.ads:5:24: error: write-only parameter "s" cannot appear as input in dependence
+    relation
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:40:15.516000'
+'2023-05-02T13:42:00.032000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    levels.ads:5:04: error: parameter "n" is missing from output dependence list
+
+    levels.ads:5:22: error: write-only parameter "s" cannot appear as input in dependence
+    relation
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:42:00.032000'
+'2023-05-02T13:43:11.751000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    levels.ads:5:04: error: parameter "n" is missing from output dependence list
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:43:11.751000'
+'2023-05-02T13:43:44.436000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    levels.ads:5:26: medium: incorrect dependency "s => n"[#0]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:43:44.436000'
+'2023-05-02T13:44:23.020000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:44:23.020000'
+'2023-05-02T13:44:58.503000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    levels.adb:7:13: medium: overflow check might fail [reason for check: result of
+    addition must fit in a 32-bits machine integer] [possible fix: subprogram at levels.ads:4
+    should mention n in a precondition][#0]
+
+    levels.adb:7:23: medium: overflow check might fail [reason for check: result of
+    addition must fit in a 32-bits machine integer] [possible fix: subprogram at levels.ads:4
+    should mention s in a precondition][#1]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:44:58.503000'
+'2023-05-02T13:45:46.499000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    levels.ads:6:17: error: invalid prefix in selected component "Integer"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:45:46.499000'
+'2023-05-02T13:46:13.508000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    levels.adb:7:23: medium: overflow check might fail [reason for check: result of
+    addition must fit in a 32-bits machine integer] [possible fix: precondition of
+    subprogram at levels.ads:4 should mention s][#0]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:46:13.508000'
+'2023-05-02T13:46:39.974000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:46:39.974000'
+'2023-05-02T13:47:18.974000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    levels.adb:1:14: error: missing body for "P2" declared at levels.ads:8
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:47:18.974000'
+'2023-05-02T13:48:03.635000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:48:03.635000'
+'2023-05-02T13:49:21.726000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'error: wrong argument for --mode
+
+    Try "gnatprove --help" for more information.
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:49:21.726000'
+'2023-05-02T13:49:44.920000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    levels.ads:6:55: error: ";" should be ","
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:49:44.920000'
+'2023-05-02T13:50:02.800000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    levels.ads:7:12: medium: postcondition might fail[#0]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:50:02.800000'
+'2023-05-02T13:50:51.860000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:50:51.860000'
+'2023-05-02T13:51:26.178000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    levels.ads:10:30: error: ";" should be ","
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:51:26.178000'
+'2023-05-02T13:51:47.527000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    levels.ads:10:18: error: ";" should be ","
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:51:47.527000'
+'2023-05-02T13:51:54.567000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\video_example1\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-02T13:51:54.567000'
