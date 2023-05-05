@@ -1,0 +1,2 @@
+spacestation.adb:26:03: error: statement expected
+spacestation.adb:26:04: error: "end increaseHeight;" expected

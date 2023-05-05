@@ -20,7 +20,18 @@ package body SpaceStation with SPARK_Mode is
       solaris.airLock2 := Closed;
    end closeAirLock2;
    
-
+   procedure increaseHeight is
+   begin
+      solaris.height := solaris.height + 1;
+   end increaseHeight;
+   
+   procedure decreaseHeight is
+   begin
+      solaris.height := solaris.height - 1;
+   end decreaseHeight;
+   
+   
+      
    
 
 end SpaceStation;

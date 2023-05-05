@@ -1,108 +1,106 @@
-'2023-05-05T15:04:59.652000':
+'2023-05-05T18:56:06.385000':
   category: GNATprove
   files:
-  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
-  label: Basic Prove File
-  output: 'Phase 1 of 2: generation of Global contracts ...
-
-    spacestation.ads:7:35: error: "Closed" is undefined (more references follow)
-
-    spacestation.ads:7:35: error: possible misspelling of "Colsed"
-
-    spacestation.ads:9:21: error: component "OrbitHeight" cannot be used before end
-    of record declaration
-
-    spacestation.ads:25:42: error: no selector "ariLock2" for type "MonitoringStation"
-    defined at line 6
-
-    spacestation.ads:25:43: error: possible misspelling of "airLock2"
-
-    gnatprove: error during generation of Global contracts
-
-    '
-  output_parser: GNATprove_Parser
-  timestamp: '2023-05-05T15:04:59.652000'
-'2023-05-05T15:05:47.335000':
-  category: GNATprove
-  files:
-  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
-  label: Basic Prove All
-  output: 'Phase 1 of 2: generation of Global contracts ...
-
-    Phase 2 of 2: flow analysis and proof ...
-
-    warning: no bodies have been analyzed by GNATprove
-
-    enable analysis of a non-generic body using SPARK_Mode
-
-    '
-  output_parser: GNATprove_Parser
-  timestamp: '2023-05-05T15:05:47.335000'
-'2023-05-05T15:05:55.430000':
-  category: GNATprove
-  files:
-  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
-  label: Basic Prove File
-  output: 'Phase 1 of 2: generation of Global contracts ...
-
-    spacestation.ads:9:21: error: component "OrbitHeight" cannot be used before end
-    of record declaration
-
-    spacestation.ads:25:42: error: no selector "ariLock2" for type "MonitoringStation"
-    defined at line 6
-
-    spacestation.ads:25:43: error: possible misspelling of "airLock2"
-
-    gnatprove: error during generation of Global contracts
-
-    '
-  output_parser: GNATprove_Parser
-  timestamp: '2023-05-05T15:05:55.430000'
-'2023-05-05T15:06:42.137000':
-  category: GNATprove
-  files:
-  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
-  label: Basic Prove File
-  output: 'Phase 1 of 2: generation of Global contracts ...
-
-    spacestation.ads:25:42: error: no selector "ariLock2" for type "MonitoringStation"
-    defined at line 6
-
-    spacestation.ads:25:43: error: possible misspelling of "airLock2"
-
-    gnatprove: error during generation of Global contracts
-
-    '
-  output_parser: GNATprove_Parser
-  timestamp: '2023-05-05T15:06:42.137000'
-'2023-05-05T15:07:26.361000':
-  category: GNATprove
-  files:
-  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
-  label: Basic Prove File
-  output: 'Phase 1 of 2: generation of Global contracts ...
-
-    spacestation.ads:25:42: error: no selector "ariLock2" for type "MonitoringStation"
-    defined at line 6
-
-    spacestation.ads:25:43: error: possible misspelling of "airLock2"
-
-    gnatprove: error during generation of Global contracts
-
-    '
-  output_parser: GNATprove_Parser
-  timestamp: '2023-05-05T15:07:26.361000'
-'2023-05-05T15:07:43.785000':
-  category: GNATprove
-  files:
-  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  - H:\FASE_CW\Coursework\obj\gnatprove
   label: Basic Prove File
   output: 'Phase 1 of 2: generation of Global contracts ...
 
     Phase 2 of 2: flow analysis and proof ...
 
-    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+    Summary logged in H:\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
 
     '
   output_parser: GNATprove_Parser
-  timestamp: '2023-05-05T15:07:43.785000'
+  timestamp: '2023-05-05T18:56:06.385000'
+'2023-05-05T19:20:37.551000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:1:14: error: missing body for "AdjustHeight" declared at spacestation.ads:46
+
+    spacestation.ads:25:31: error: extra "," ignored
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-05T19:20:37.551000'
+'2023-05-05T20:02:47.812000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:26:03: error: statement expected
+
+    spacestation.adb:26:04: error: "end increaseHeight;" expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-05T20:02:47.812000'
+'2023-05-05T20:04:13.171000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:26:03: error: statement expected
+
+    spacestation.adb:26:04: error: "end increaseHeight;" expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-05T20:04:13.171000'
+'2023-05-05T20:05:15.543000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.ads:66:15: error: "OribitHeightInvariant" is undefined
+
+    spacestation.ads:66:15: error: possible misspelling of "OrbitHeightInvariant"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-05T20:05:15.543000'
+'2023-05-05T20:05:38.670000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in H:\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-05T20:05:38.670000'
+'2023-05-05T20:08:29.489000':
+  category: GNATprove
+  files:
+  - H:\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in H:\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-05T20:08:29.489000'

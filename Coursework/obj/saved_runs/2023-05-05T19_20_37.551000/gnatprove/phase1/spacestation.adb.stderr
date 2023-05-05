@@ -1,0 +1,2 @@
+spacestation.adb:1:14: error: missing body for "AdjustHeight" declared at spacestation.ads:46
+spacestation.ads:25:31: error: extra "," ignored
