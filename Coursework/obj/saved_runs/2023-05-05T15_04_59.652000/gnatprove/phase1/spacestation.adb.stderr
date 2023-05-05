@@ -1,0 +1,5 @@
+spacestation.ads:7:35: error: "Closed" is undefined (more references follow)
+spacestation.ads:7:35: error: possible misspelling of "Colsed"
+spacestation.ads:9:21: error: component "OrbitHeight" cannot be used before end of record declaration
+spacestation.ads:25:42: error: no selector "ariLock2" for type "MonitoringStation" defined at line 6
+spacestation.ads:25:43: error: possible misspelling of "airLock2"

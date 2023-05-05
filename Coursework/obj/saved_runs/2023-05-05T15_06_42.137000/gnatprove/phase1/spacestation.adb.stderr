@@ -1,0 +1,2 @@
+spacestation.ads:25:42: error: no selector "ariLock2" for type "MonitoringStation" defined at line 6
+spacestation.ads:25:43: error: possible misspelling of "airLock2"
