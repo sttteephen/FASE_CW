@@ -1,0 +1,79 @@
+V "GNAT Lib v2021"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U spacestation%b	spacestation.adb	d3367e0e OO PK
+
+U spacestation%s	spacestation.ads	bb3d2d4c OO PK
+
+D spacestation.ads	20230505230842 bb3d2d4c spacestation%s
+D spacestation.adb	20230505225658 680b5342 spacestation%b
+D system.ads		20210520051134 2ffa5114 system%s
+G a Z
+X 1 spacestation.ads
+1K9*SpaceStation 80l5 80e17 2|1b14 37l5 37t17
+3E9*AirLockStatus 3e40 8r18 9r18
+3n27*Open{3E9} 28r33 38r33 2|5r27 10r27
+3n33*Closed{3E9} 8r35 9r35 16r26 16r55 25r32 29r29 35r32 39r29 47r33 55r33
+. 2|15r27 20r27
+4I9*OrbitHeight<short_integer> 10r16 19r26 19r66 63r30 66r32 72r30 75r32
+5E9*Module 5e41
+5n20*Occupied{5E9}
+5n30*Unoccupied{5E9}
+7R9*MonitoringStation 11e14 13r14
+8e7*airLock1{3E9} 16r15 28r22 35r21 39r18 47r22 2|5m15 15m15
+9e7*airLock2{3E9} 16r44 25r21 29r18 38r22 55r22 2|10m15 20m15
+10i7*height{4I9} 19r16 19r56 63r21 66r22 72r21 75r22 2|25m15 25r33 30m15
+. 30r33
+13r4*solaris{7R9} 16r7 16r36 19r8 19r48 24r27 25r13 28r14 29r10 34r27 35r13
+. 38r14 39r10 44r27 47r14 52r27 55r14 62r27 63r13 66r14 71r27 72r13 75r14
+. 2|5m7 10m7 15m7 20m7 25m7 25r25 30m7 30r25
+15V13*AirLockInvariant{boolean} 26s15 30s10 36s15 40s10 45s13 48s15 53s13
+. 56s15 65s15 68s15 74s15 77s15
+18V13*OrbitHeightInvariant{boolean} 27s15 31s10 37s15 41s10 46s15 49s15 54s15
+. 57s15 64s15 67s15 73s15 76s15
+23U14*openAirLock1 2|3b14 6l8 6t20
+33U14*openAirLock2 2|8b14 11l8 11t20
+43U14*closeAirLock1 2|13b14 16l8 16t21
+51U14*closeAirLock2 2|18b14 21l8 21t21
+61U14*increaseHeight 2|23b14 26l8 26t22
+70U14*decreaseHeight 2|28b14 31l8 31t22
+
+QQ SPARKVERSION SPARK Community 2021 (20210519)
+GG EK_DIRECT_CALLS spacestation__airlockinvariant 0
+GG EK_GLOBALS spacestation__airlockinvariant local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 spacestation proper_proof_in 0 proper_input 1 spacestation__solaris proper_output 0 refined_proof_in 0 refined_input 1 spacestation__solaris refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 spacestation__solaris LOCKS 0
+GG EK_DIRECT_CALLS spacestation__orbitheightinvariant 0
+GG EK_GLOBALS spacestation__orbitheightinvariant local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 spacestation proper_proof_in 0 proper_input 1 spacestation__solaris proper_output 0 refined_proof_in 0 refined_input 1 spacestation__solaris refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 spacestation__solaris LOCKS 0
+GG EK_DIRECT_CALLS spacestation__openairlock1 2 spacestation__airlockinvariant spacestation__orbitheightinvariant
+GG EK_GLOBALS spacestation__openairlock1 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW 1 spacestation proper_proof_in 0 proper_input 1 spacestation__solaris proper_output 1 spacestation__solaris refined_proof_in 0 refined_input 1 spacestation__solaris refined_output 1 spacestation__solaris calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 spacestation__solaris LOCKS 0
+GG EK_DIRECT_CALLS spacestation__openairlock2 2 spacestation__airlockinvariant spacestation__orbitheightinvariant
+GG EK_GLOBALS spacestation__openairlock2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW 1 spacestation proper_proof_in 0 proper_input 1 spacestation__solaris proper_output 1 spacestation__solaris refined_proof_in 0 refined_input 1 spacestation__solaris refined_output 1 spacestation__solaris calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 spacestation__solaris LOCKS 0
+GG EK_DIRECT_CALLS spacestation__closeairlock1 2 spacestation__airlockinvariant spacestation__orbitheightinvariant
+GG EK_GLOBALS spacestation__closeairlock1 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW 1 spacestation proper_proof_in 0 proper_input 1 spacestation__solaris proper_output 1 spacestation__solaris refined_proof_in 0 refined_input 1 spacestation__solaris refined_output 1 spacestation__solaris calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 spacestation__solaris LOCKS 0
+GG EK_DIRECT_CALLS spacestation__closeairlock2 2 spacestation__airlockinvariant spacestation__orbitheightinvariant
+GG EK_GLOBALS spacestation__closeairlock2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW 1 spacestation proper_proof_in 0 proper_input 1 spacestation__solaris proper_output 1 spacestation__solaris refined_proof_in 0 refined_input 1 spacestation__solaris refined_output 1 spacestation__solaris calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 spacestation__solaris LOCKS 0
+GG EK_DIRECT_CALLS spacestation__increaseheight 2 spacestation__airlockinvariant spacestation__orbitheightinvariant
+GG EK_GLOBALS spacestation__increaseheight local FALSE E_PROCEDURE FALSE ORIGIN_FLOW 1 spacestation proper_proof_in 0 proper_input 1 spacestation__solaris proper_output 1 spacestation__solaris refined_proof_in 0 refined_input 1 spacestation__solaris refined_output 1 spacestation__solaris calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 spacestation__solaris LOCKS 0
+GG EK_DIRECT_CALLS spacestation__decreaseheight 2 spacestation__airlockinvariant spacestation__orbitheightinvariant
+GG EK_GLOBALS spacestation__decreaseheight local FALSE E_PROCEDURE FALSE ORIGIN_FLOW 1 spacestation proper_proof_in 0 proper_input 1 spacestation__solaris proper_output 1 spacestation__solaris refined_proof_in 0 refined_input 1 spacestation__solaris refined_output 1 spacestation__solaris calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 spacestation__solaris LOCKS 0
+GG EK_DIRECT_CALLS spacestation 0
+GG EK_GLOBALS spacestation local FALSE E_PACKAGE TRUE ORIGIN_FLOW 0 proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 1 spacestation__solaris refined_initializes 1 spacestation__solaris calls_proof 0 calls 0 calls_conditional 0 local_var 1 spacestation__solaris FALSE FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_FLOW_SCOPE spacestation TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_FLOW_SCOPE spacestation__closeairlock1 FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__increaseheight FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__orbitheightinvariant FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__openairlock2 FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__openairlock1 FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__closeairlock2 FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__decreaseheight FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__airlockinvariant FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_END_MARKER

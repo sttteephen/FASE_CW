@@ -1,0 +1,1111 @@
+module Spacestation__airlockstatus
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  
+  type airlockstatus
+  
+  val function first : int
+    ensures { result = (0 : int) }
+  
+  val function last : int
+    ensures { result = (1 : int) }
+  
+  predicate in_range (x: int) = ((first <= x) /\ (x <= last))
+  
+  val in_range (x: int) : bool
+    ensures { result <-> (in_range (x : int)) }
+  
+  clone export ada__model.Static_Discrete with
+    axiom .,
+    type t = airlockstatus,
+    function first = first,
+    function last = last,
+    predicate in_range = in_range
+  
+  type airlockstatus__ref = {
+                           mutable airlockstatus__content : airlockstatus
+                           }
+  
+  function airlockstatus__ref_airlockstatus__content__projection (a: airlockstatus__ref) : airlockstatus =
+    a.airlockstatus__content
+  
+  meta "model_projection" function airlockstatus__ref_airlockstatus__content__projection
+  
+  meta "inline:no" function airlockstatus__ref_airlockstatus__content__projection
+  
+  val airlockstatus__havoc (x: airlockstatus__ref) : unit
+    writes { x }
+end
+
+module Spacestation__airlockstatus__rep
+  use Spacestation__airlockstatus as Spacestation__airlockstatus
+  use _gnatprove_standard.Main
+  use int.Int
+  clone export ada__model.Rep_Proj_Int with
+    axiom .,
+    type t = Spacestation__airlockstatus.airlockstatus,
+    predicate in_range = Spacestation__airlockstatus.in_range
+  
+  meta "model_projection" function to_rep
+  
+  meta "inline:no" function to_rep
+end
+
+module Spacestation__orbitheight
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  
+  type orbitheight = <range 300 450>
+  
+  val function first : int
+    ensures { result = (300 : int) }
+  
+  val function last : int
+    ensures { result = (450 : int) }
+  
+  predicate in_range (x: int) = ((first <= x) /\ (x <= last))
+  
+  val in_range (x: int) : bool
+    ensures { result <-> (in_range (x : int)) }
+  
+  clone export ada__model.Static_Discrete with
+    axiom .,
+    type t = orbitheight,
+    function first = first,
+    function last = last,
+    predicate in_range = in_range
+  
+  type orbitheight__ref = { mutable orbitheight__content : orbitheight }
+  
+  function orbitheight__ref_orbitheight__content__projection (a: orbitheight__ref) : orbitheight =
+    a.orbitheight__content
+  
+  meta "model_projection" function orbitheight__ref_orbitheight__content__projection
+  
+  meta "inline:no" function orbitheight__ref_orbitheight__content__projection
+  
+  val orbitheight__havoc (x: orbitheight__ref) : unit
+    writes { x }
+end
+
+module Spacestation__orbitheight__rep
+  use Spacestation__orbitheight as Spacestation__orbitheight
+  use _gnatprove_standard.Main
+  use int.Int
+  
+  function to_rep (x: Spacestation__orbitheight.orbitheight) : int =
+    Spacestation__orbitheight.orbitheight'int x
+  
+  clone export ada__model.Rep_Proj_Int with
+    axiom .,
+    type t = Spacestation__orbitheight.orbitheight,
+    predicate in_range = Spacestation__orbitheight.in_range,
+    function to_rep = to_rep
+  
+  meta "model_projection" function to_rep
+  
+  meta "inline:no" function to_rep
+end
+
+module Spacestation__module
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  
+  type module__
+  
+  val function first : int
+    ensures { result = (0 : int) }
+  
+  val function last : int
+    ensures { result = (1 : int) }
+  
+  predicate in_range (x: int) = ((first <= x) /\ (x <= last))
+  
+  val in_range (x: int) : bool
+    ensures { result <-> (in_range (x : int)) }
+  
+  clone export ada__model.Static_Discrete with
+    axiom .,
+    type t = module__,
+    function first = first,
+    function last = last,
+    predicate in_range = in_range
+  
+  type module____ref = { mutable module____content : module__ }
+  
+  function module____ref_module____content__projection (a: module____ref) : module__ =
+    a.module____content
+  
+  meta "model_projection" function module____ref_module____content__projection
+  
+  meta "inline:no" function module____ref_module____content__projection
+  
+  val module____havoc (x: module____ref) : unit
+    writes { x }
+end
+
+module Spacestation__module__rep
+  use Spacestation__module as Spacestation__module
+  use _gnatprove_standard.Main
+  use int.Int
+  clone export ada__model.Rep_Proj_Int with
+    axiom .,
+    type t = Spacestation__module.module__,
+    predicate in_range = Spacestation__module.in_range
+  
+  meta "model_projection" function to_rep
+  
+  meta "inline:no" function to_rep
+end
+
+module Array__Int__Spacestation__module
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use Spacestation__module as Spacestation__module
+  use Spacestation__module__rep as Spacestation__module__rep
+  
+  function index_I1_one : int = 1 : int
+  
+  type component_type = Spacestation__module.module__
+  
+  clone export _gnatprove_standard.Array__1 with
+    axiom .,
+    type I1.t = int,
+    predicate I1.le = Int.( <= ),
+    predicate I1.lt = Int.( < ),
+    predicate I1.gt = Int.( > ),
+    function I1.add = Int.( + ),
+    function I1.sub = Int.( - ),
+    function I1.one = index_I1_one,
+    type component_type = component_type
+  
+  function bool_eq (a: map) (a__first: int) (a__last: int) (b: map) (b__first: int) (b__last: int) : bool =
+    ((if (a__first <= a__last) then
+        ((b__first <= b__last) /\
+           ((a__last - a__first) = (b__last - b__first)))
+      else (b__first > b__last)) /\
+       (forall temp___idx_161 : int.
+          if ((a__first <= temp___idx_161) /\ (temp___idx_161 <= a__last)) then
+            ((Spacestation__module__rep.to_rep ((get a) temp___idx_161))
+               = (Spacestation__module__rep.to_rep
+                    ((get b) ((b__first - a__first) + temp___idx_161))))
+          else true))
+  
+  val bool_eq (a: map) (a__first: int) (a__last: int) (b: map) (b__first: int) (b__last: int) : 
+    bool
+    ensures { result
+      =
+      ((((((bool_eq (a : map)) (a__first : int)) (a__last : int)) (b : map))
+          (b__first : int))
+         (b__last : int)) }
+  
+  axiom bool_eq_rev:
+    forall a : map, b : map.
+      forall a__first : int, a__last : int, b__first : int, b__last : int.
+        ((((((((bool_eq b) b__first) b__last) a) a__first) a__last) = True) ->
+           ((if (a__first <= a__last) then
+               ((b__first <= b__last) /\
+                  ((a__last - a__first) = (b__last - b__first)))
+             else (b__first > b__last)) /\
+              (forall temp___idx_161 : int.
+                 if ((a__first <= temp___idx_161) /\
+                       (temp___idx_161 <= a__last)) then
+                   ((Spacestation__module__rep.to_rep
+                       ((get a) temp___idx_161))
+                      = (Spacestation__module__rep.to_rep
+                           ((get b) ((b__first - a__first) + temp___idx_161))))
+                 else true)))
+end
+
+module Spacestation__modulestack
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use Spacestation__module as Spacestation__module
+  use Array__Int__Spacestation__module as Array__Int__Spacestation__module
+  
+  type component_type = Spacestation__module.module__
+  
+  val function first : int
+    ensures { result = (1 : int) }
+  
+  val function last : int
+    ensures { result = (20 : int) }
+  
+  clone export ada__model.Constr_Array with
+    axiom .,
+    type map = Array__Int__Spacestation__module.map,
+    function array_bool_eq = Array__Int__Spacestation__module.bool_eq,
+    function first = first,
+    function last = last,
+    type index_rep_type = int
+end
+
+module Spacestation__monitoringstation__rep
+  use _gnatprove_standard.Main
+  use int.Int
+  use Spacestation__airlockstatus as Spacestation__airlockstatus
+  use Spacestation__airlockstatus__rep as Spacestation__airlockstatus__rep
+  use Spacestation__orbitheight as Spacestation__orbitheight
+  use Spacestation__orbitheight__rep as Spacestation__orbitheight__rep
+  use Spacestation__modulestack as Spacestation__modulestack
+  use Array__Int__Spacestation__module as Array__Int__Spacestation__module
+  use Array__Int__Spacestation__module as Array__Int__Spacestation__module
+  use Array__Int__Spacestation__module as Array__Int__Spacestation__module
+  use Array__Int__Spacestation__module as Array__Int__Spacestation__module
+  
+  type __split_fields = {
+                       rec__spacestation__monitoringstation__airlock1 :
+                         Spacestation__airlockstatus.airlockstatus;
+                       rec__spacestation__monitoringstation__airlock2 :
+                         Spacestation__airlockstatus.airlockstatus;
+                       rec__spacestation__monitoringstation__height :
+                         Spacestation__orbitheight.orbitheight;
+                       rec__spacestation__monitoringstation__modules :
+                         Array__Int__Spacestation__module.map
+                       }
+  
+  function __split_fields_rec__spacestation__monitoringstation__airlock1__projection (a: __split_fields) : 
+    Spacestation__airlockstatus.airlockstatus =
+    a.rec__spacestation__monitoringstation__airlock1
+  
+  meta "model_projection" function __split_fields_rec__spacestation__monitoringstation__airlock1__projection
+  
+  meta "inline:no" function __split_fields_rec__spacestation__monitoringstation__airlock1__projection
+  
+  function __split_fields_rec__spacestation__monitoringstation__airlock2__projection (a: __split_fields) : 
+    Spacestation__airlockstatus.airlockstatus =
+    a.rec__spacestation__monitoringstation__airlock2
+  
+  meta "model_projection" function __split_fields_rec__spacestation__monitoringstation__airlock2__projection
+  
+  meta "inline:no" function __split_fields_rec__spacestation__monitoringstation__airlock2__projection
+  
+  function __split_fields_rec__spacestation__monitoringstation__height__projection (a: __split_fields) : 
+    Spacestation__orbitheight.orbitheight =
+    a.rec__spacestation__monitoringstation__height
+  
+  meta "model_projection" function __split_fields_rec__spacestation__monitoringstation__height__projection
+  
+  meta "inline:no" function __split_fields_rec__spacestation__monitoringstation__height__projection
+  
+  function __split_fields_rec__spacestation__monitoringstation__modules__projection (a: __split_fields) : 
+    Array__Int__Spacestation__module.map =
+    a.rec__spacestation__monitoringstation__modules
+  
+  meta "model_projection" function __split_fields_rec__spacestation__monitoringstation__modules__projection
+  
+  meta "inline:no" function __split_fields_rec__spacestation__monitoringstation__modules__projection
+  
+  type __split_fields__ref = {
+                            mutable __split_fields__content : __split_fields
+                            }
+  
+  function __split_fields__ref___split_fields__content__projection (a: __split_fields__ref) : __split_fields =
+    __split_fields__content a
+  
+  meta "model_projection" function __split_fields__ref___split_fields__content__projection
+  
+  meta "inline:no" function __split_fields__ref___split_fields__content__projection
+  
+  val __split_fields__havoc (x: __split_fields__ref) : unit
+    writes { x }
+  
+  type __rep = { __split_fields : __split_fields }
+  
+  function __rep___split_fields__projection (a: __rep) : __split_fields =
+    __split_fields a
+  
+  meta "model_projection" function __rep___split_fields__projection
+  
+  meta "inline:no" function __rep___split_fields__projection
+  
+  function to_base (a: __rep) : __rep = a
+  
+  val to_base (a: __rep) : __rep
+    ensures { result = (to_base (a : __rep)) }
+  
+  function of_base (a: __rep) : __rep = a
+  
+  val of_base (a: __rep) : __rep
+    ensures { result = (of_base (a : __rep)) }
+  
+  predicate spacestation__monitoringstation__airlock1__pred (a: __rep) = true
+  
+  val spacestation__monitoringstation__airlock1__pred (a: __rep) : bool
+    ensures { result
+                <->
+                (spacestation__monitoringstation__airlock1__pred (a : __rep)) }
+  
+  val rec__spacestation__monitoringstation__airlock1_ (a: __rep) : Spacestation__airlockstatus.airlockstatus
+    requires { spacestation__monitoringstation__airlock1__pred a }
+    ensures { (result
+                 = ((__split_fields a).rec__spacestation__monitoringstation__airlock1)) }
+  
+  predicate spacestation__monitoringstation__airlock2__pred (a: __rep) = true
+  
+  val spacestation__monitoringstation__airlock2__pred (a: __rep) : bool
+    ensures { result
+                <->
+                (spacestation__monitoringstation__airlock2__pred (a : __rep)) }
+  
+  val rec__spacestation__monitoringstation__airlock2_ (a: __rep) : Spacestation__airlockstatus.airlockstatus
+    requires { spacestation__monitoringstation__airlock2__pred a }
+    ensures { (result
+                 = ((__split_fields a).rec__spacestation__monitoringstation__airlock2)) }
+  
+  predicate spacestation__monitoringstation__height__pred (a: __rep) = true
+  
+  val spacestation__monitoringstation__height__pred (a: __rep) : bool
+    ensures { result
+                <->
+                (spacestation__monitoringstation__height__pred (a : __rep)) }
+  
+  val rec__spacestation__monitoringstation__height_ (a: __rep) : Spacestation__orbitheight.orbitheight
+    requires { spacestation__monitoringstation__height__pred a }
+    ensures { (result
+                 = ((__split_fields a).rec__spacestation__monitoringstation__height)) }
+  
+  predicate spacestation__monitoringstation__modules__pred (a: __rep) = true
+  
+  val spacestation__monitoringstation__modules__pred (a: __rep) : bool
+    ensures { result
+                <->
+                (spacestation__monitoringstation__modules__pred (a : __rep)) }
+  
+  val rec__spacestation__monitoringstation__modules_ (a: __rep) : Array__Int__Spacestation__module.map
+    requires { spacestation__monitoringstation__modules__pred a }
+    ensures { (result
+                 = ((__split_fields a).rec__spacestation__monitoringstation__modules)) }
+  
+  function bool_eq (a: __rep) (b: __rep) : bool =
+    if ((((Spacestation__airlockstatus__rep.to_rep
+             ((__split_fields a).rec__spacestation__monitoringstation__airlock1))
+            = (Spacestation__airlockstatus__rep.to_rep
+                 ((__split_fields b).rec__spacestation__monitoringstation__airlock1))) /\
+           ((Spacestation__airlockstatus__rep.to_rep
+               ((__split_fields a).rec__spacestation__monitoringstation__airlock2))
+              = (Spacestation__airlockstatus__rep.to_rep
+                   ((__split_fields b).rec__spacestation__monitoringstation__airlock2)))) /\
+          (((Spacestation__orbitheight__rep.to_rep
+               ((__split_fields a).rec__spacestation__monitoringstation__height))
+              = (Spacestation__orbitheight__rep.to_rep
+                   ((__split_fields b).rec__spacestation__monitoringstation__height))) /\
+             ((Spacestation__modulestack.bool_eq
+                 ((__split_fields a).rec__spacestation__monitoringstation__modules))
+                ((__split_fields b).rec__spacestation__monitoringstation__modules)))) then
+      True
+    else False
+  
+  val bool_eq (a: __rep) (b: __rep) : bool
+    ensures { result = ((bool_eq (a : __rep)) (b : __rep)) }
+end
+
+module Spacestation__monitoringstation
+  use export Spacestation__monitoringstation__rep
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  
+  type monitoringstation = __rep
+  
+  val function value__size : int
+  
+  val function object__size : int
+  
+  val function alignment : int
+  
+  axiom value__size_axiom: (value__size >= (0 : int))
+  
+  axiom object__size_axiom: (object__size >= (0 : int))
+  
+  axiom alignment_axiom: (alignment >= (0 : int))
+  
+  val function spacestation__monitoringstation__airlock1__first__bit : 
+    int
+  
+  val function spacestation__monitoringstation__airlock1__last__bit : 
+    int
+  
+  val function spacestation__monitoringstation__airlock1__position : 
+    int
+  
+  axiom spacestation__monitoringstation__airlock1__first__bit_axiom:
+    (spacestation__monitoringstation__airlock1__first__bit >= (0 : int))
+  
+  axiom spacestation__monitoringstation__airlock1__last__bit_axiom:
+    (spacestation__monitoringstation__airlock1__last__bit
+       > spacestation__monitoringstation__airlock1__first__bit)
+  
+  axiom spacestation__monitoringstation__airlock1__position_axiom:
+    (spacestation__monitoringstation__airlock1__position >= (0 : int))
+  
+  val function spacestation__monitoringstation__airlock2__first__bit : 
+    int
+  
+  val function spacestation__monitoringstation__airlock2__last__bit : 
+    int
+  
+  val function spacestation__monitoringstation__airlock2__position : 
+    int
+  
+  axiom spacestation__monitoringstation__airlock2__first__bit_axiom:
+    (spacestation__monitoringstation__airlock2__first__bit >= (0 : int))
+  
+  axiom spacestation__monitoringstation__airlock2__last__bit_axiom:
+    (spacestation__monitoringstation__airlock2__last__bit
+       > spacestation__monitoringstation__airlock2__first__bit)
+  
+  axiom spacestation__monitoringstation__airlock2__position_axiom:
+    (spacestation__monitoringstation__airlock2__position >= (0 : int))
+  
+  val function spacestation__monitoringstation__height__first__bit : 
+    int
+  
+  val function spacestation__monitoringstation__height__last__bit : int
+  
+  val function spacestation__monitoringstation__height__position : int
+  
+  axiom spacestation__monitoringstation__height__first__bit_axiom:
+    (spacestation__monitoringstation__height__first__bit >= (0 : int))
+  
+  axiom spacestation__monitoringstation__height__last__bit_axiom:
+    (spacestation__monitoringstation__height__last__bit
+       > spacestation__monitoringstation__height__first__bit)
+  
+  axiom spacestation__monitoringstation__height__position_axiom:
+    (spacestation__monitoringstation__height__position >= (0 : int))
+  
+  val function spacestation__monitoringstation__modules__first__bit : 
+    int
+  
+  val function spacestation__monitoringstation__modules__last__bit : 
+    int
+  
+  val function spacestation__monitoringstation__modules__position : int
+  
+  axiom spacestation__monitoringstation__modules__first__bit_axiom:
+    (spacestation__monitoringstation__modules__first__bit >= (0 : int))
+  
+  axiom spacestation__monitoringstation__modules__last__bit_axiom:
+    (spacestation__monitoringstation__modules__last__bit
+       > spacestation__monitoringstation__modules__first__bit)
+  
+  axiom spacestation__monitoringstation__modules__position_axiom:
+    (spacestation__monitoringstation__modules__position >= (0 : int))
+  
+  val function user_eq (a: monitoringstation) (b: monitoringstation) : 
+    bool
+  
+  val function dummy : monitoringstation
+  
+  type monitoringstation__ref = {
+                               mutable monitoringstation__content :
+                                 monitoringstation
+                               }
+  
+  function monitoringstation__ref_monitoringstation__content__projection (a: monitoringstation__ref) : monitoringstation =
+    a.monitoringstation__content
+  
+  meta "model_projection" function monitoringstation__ref_monitoringstation__content__projection
+  
+  meta "inline:no" function monitoringstation__ref_monitoringstation__content__projection
+  
+  val monitoringstation__havoc (x: monitoringstation__ref) : unit
+    writes { x }
+end
+
+module Spacestation__solaris
+  use _gnatprove_standard.Main
+  use int.Int
+  use Spacestation__monitoringstation as Spacestation__monitoringstation
+  
+  val solaris__split_fields : Spacestation__monitoringstation.__split_fields__ref
+end
+
+module Spacestation__monitoringstation___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use Spacestation__monitoringstation as Spacestation__monitoringstation
+  use Spacestation__airlockstatus as Spacestation__airlockstatus
+  use Spacestation__airlockstatus__rep as Spacestation__airlockstatus__rep
+  use Spacestation__orbitheight as Spacestation__orbitheight
+  use Spacestation__orbitheight__rep as Spacestation__orbitheight__rep
+  
+  predicate dynamic_invariant (temp___expr_206: Spacestation__monitoringstation.monitoringstation) (temp___is_init_202: bool) (temp___skip_constant_203: bool) (temp___do_toplevel_204: bool) (temp___do_typ_inv_205: bool) =
+    true
+  
+  val dynamic_invariant (temp___expr_206: Spacestation__monitoringstation.monitoringstation) (temp___is_init_202: bool) (temp___skip_constant_203: bool) (temp___do_toplevel_204: bool) (temp___do_typ_inv_205: bool) : 
+    bool
+    ensures { result
+                <->
+                (((((dynamic_invariant
+                       (temp___expr_206 :
+                          Spacestation__monitoringstation.monitoringstation))
+                      (temp___is_init_202 : bool))
+                     (temp___skip_constant_203 : bool))
+                    (temp___do_toplevel_204 : bool))
+                   (temp___do_typ_inv_205 : bool)) }
+  
+  predicate default_initial_assumption (temp___expr_208: Spacestation__monitoringstation.monitoringstation) (temp___skip_top_level_209: bool) =
+    (((if (Spacestation__monitoringstation.spacestation__monitoringstation__airlock1__pred
+             temp___expr_208) then
+         ((Spacestation__airlockstatus__rep.to_rep
+             ((Spacestation__monitoringstation.__split_fields temp___expr_208).
+                Spacestation__monitoringstation.rec__spacestation__monitoringstation__airlock1))
+            = (1 : int))
+       else true) /\
+        (if (Spacestation__monitoringstation.spacestation__monitoringstation__airlock2__pred
+               temp___expr_208) then
+           ((Spacestation__airlockstatus__rep.to_rep
+               ((Spacestation__monitoringstation.__split_fields
+                    temp___expr_208).Spacestation__monitoringstation.rec__spacestation__monitoringstation__airlock2))
+              = (1 : int))
+         else true)) /\
+       (if (Spacestation__monitoringstation.spacestation__monitoringstation__height__pred
+              temp___expr_208) then
+          ((Spacestation__orbitheight__rep.to_rep
+              ((Spacestation__monitoringstation.__split_fields
+                   temp___expr_208).Spacestation__monitoringstation.rec__spacestation__monitoringstation__height))
+             = (400 : int))
+        else true))
+  
+  val default_initial_assumption (temp___expr_208: Spacestation__monitoringstation.monitoringstation) (temp___skip_top_level_209: bool) : 
+    bool
+    ensures { result
+                <->
+                ((default_initial_assumption
+                    (temp___expr_208 :
+                       Spacestation__monitoringstation.monitoringstation))
+                   (temp___skip_top_level_209 : bool)) }
+end
+
+module Spacestation__airlockinvariant
+  use _gnatprove_standard.Main
+  use int.Int
+  use Spacestation__monitoringstation as Spacestation__monitoringstation
+  
+  val function airlockinvariant (Spacestation__solaris___solaris__split_fields___: 
+    Spacestation__monitoringstation.__split_fields) : bool
+  
+  val predicate airlockinvariant__function_guard (temp___result_162: bool) (Spacestation__solaris___solaris__split_fields___: 
+    Spacestation__monitoringstation.__split_fields)
+end
+
+module Spacestation__airlockinvariant___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use Spacestation__solaris as Spacestation__solaris
+  use Spacestation__monitoringstation as Spacestation__monitoringstation
+  use Spacestation__monitoringstation___axiom as Spacestation__monitoringstation___axiom
+  use Spacestation__airlockinvariant as Spacestation__airlockinvariant
+  use Spacestation__airlockstatus as Spacestation__airlockstatus
+  use Spacestation__airlockstatus__rep as Spacestation__airlockstatus__rep
+  
+  val airlockinvariant (__void_param: unit) : bool
+    reads { Spacestation__solaris.solaris__split_fields }
+    requires { true }
+    writes {  }
+    ensures { (((result
+                   = (Spacestation__airlockinvariant.airlockinvariant
+                        (Spacestation__monitoringstation.__split_fields__content
+                            Spacestation__solaris.solaris__split_fields))) /\
+                  ((Spacestation__airlockinvariant.airlockinvariant__function_guard
+                      result)
+                     (Spacestation__monitoringstation.__split_fields__content
+                         Spacestation__solaris.solaris__split_fields))) /\
+                 (result
+                    = (((Spacestation__airlockstatus__rep.to_rep
+                           ((Spacestation__monitoringstation.__split_fields
+                                { Spacestation__monitoringstation.__split_fields =
+                                    (Spacestation__monitoringstation.__split_fields__content
+                                        Spacestation__solaris.solaris__split_fields) }).
+                              Spacestation__monitoringstation.rec__spacestation__monitoringstation__airlock1))
+                          = (1 : int)) \/
+                         ((Spacestation__airlockstatus__rep.to_rep
+                             ((Spacestation__monitoringstation.__split_fields
+                                  { Spacestation__monitoringstation.__split_fields =
+                                      (Spacestation__monitoringstation.__split_fields__content
+                                          Spacestation__solaris.solaris__split_fields) }).
+                                Spacestation__monitoringstation.rec__spacestation__monitoringstation__airlock2))
+                            = (1 : int))))) }
+  
+  axiom airlockinvariant__post_axiom:
+    forall Spacestation__solaris___solaris__split_fields___ : Spacestation__monitoringstation.__split_fields
+          [Spacestation__airlockinvariant.airlockinvariant
+             Spacestation__solaris___solaris__split_fields___].
+      ((((((Spacestation__monitoringstation___axiom.dynamic_invariant
+              { Spacestation__monitoringstation.__split_fields =
+                  Spacestation__solaris___solaris__split_fields___ })
+             True)
+            True)
+           True)
+          True) ->
+         (let result =
+            Spacestation__airlockinvariant.airlockinvariant
+              Spacestation__solaris___solaris__split_fields___ in
+          if ((Spacestation__airlockinvariant.airlockinvariant__function_guard
+                 result)
+                Spacestation__solaris___solaris__split_fields___) then
+            ((true /\ true) /\ true)
+          else true))
+  
+  axiom airlockinvariant__def_axiom:
+    forall Spacestation__solaris___solaris__split_fields___ : Spacestation__monitoringstation.__split_fields
+          [Spacestation__airlockinvariant.airlockinvariant
+             Spacestation__solaris___solaris__split_fields___].
+      ((Spacestation__airlockinvariant.airlockinvariant
+          Spacestation__solaris___solaris__split_fields___)
+         = (((Spacestation__airlockstatus__rep.to_rep
+                ((Spacestation__monitoringstation.__split_fields
+                     { Spacestation__monitoringstation.__split_fields =
+                         Spacestation__solaris___solaris__split_fields___ }).
+                   Spacestation__monitoringstation.rec__spacestation__monitoringstation__airlock1))
+               = (1 : int)) \/
+              ((Spacestation__airlockstatus__rep.to_rep
+                  ((Spacestation__monitoringstation.__split_fields
+                       { Spacestation__monitoringstation.__split_fields =
+                           Spacestation__solaris___solaris__split_fields___ }).
+                     Spacestation__monitoringstation.rec__spacestation__monitoringstation__airlock2))
+                 = (1 : int))))
+end
+
+module Spacestation__orbitheightinvariant
+  use _gnatprove_standard.Main
+  use int.Int
+  use Spacestation__monitoringstation as Spacestation__monitoringstation
+  
+  val function orbitheightinvariant (Spacestation__solaris___solaris__split_fields___: 
+    Spacestation__monitoringstation.__split_fields) : bool
+  
+  val predicate orbitheightinvariant__function_guard (temp___result_163: bool) (Spacestation__solaris___solaris__split_fields___: 
+    Spacestation__monitoringstation.__split_fields)
+end
+
+module Spacestation__orbitheightinvariant___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use Spacestation__solaris as Spacestation__solaris
+  use Spacestation__monitoringstation as Spacestation__monitoringstation
+  use Spacestation__monitoringstation___axiom as Spacestation__monitoringstation___axiom
+  use Spacestation__orbitheightinvariant as Spacestation__orbitheightinvariant
+  use Spacestation__orbitheight as Spacestation__orbitheight
+  use Spacestation__orbitheight__rep as Spacestation__orbitheight__rep
+  
+  val orbitheightinvariant (__void_param: unit) : bool
+    reads { Spacestation__solaris.solaris__split_fields }
+    requires { true }
+    writes {  }
+    ensures { (((result
+                   = (Spacestation__orbitheightinvariant.orbitheightinvariant
+                        (Spacestation__monitoringstation.__split_fields__content
+                            Spacestation__solaris.solaris__split_fields))) /\
+                  ((Spacestation__orbitheightinvariant.orbitheightinvariant__function_guard
+                      result)
+                     (Spacestation__monitoringstation.__split_fields__content
+                         Spacestation__solaris.solaris__split_fields))) /\
+                 (result
+                    = (((Spacestation__orbitheight__rep.to_rep
+                           ((Spacestation__monitoringstation.__split_fields
+                                { Spacestation__monitoringstation.__split_fields =
+                                    (Spacestation__monitoringstation.__split_fields__content
+                                        Spacestation__solaris.solaris__split_fields) }).
+                              Spacestation__monitoringstation.rec__spacestation__monitoringstation__height))
+                          >= (300 : int)) /\
+                         ((Spacestation__orbitheight__rep.to_rep
+                             ((Spacestation__monitoringstation.__split_fields
+                                  { Spacestation__monitoringstation.__split_fields =
+                                      (Spacestation__monitoringstation.__split_fields__content
+                                          Spacestation__solaris.solaris__split_fields) }).
+                                Spacestation__monitoringstation.rec__spacestation__monitoringstation__height))
+                            <= (450 : int))))) }
+  
+  axiom orbitheightinvariant__post_axiom:
+    forall Spacestation__solaris___solaris__split_fields___ : Spacestation__monitoringstation.__split_fields
+          [Spacestation__orbitheightinvariant.orbitheightinvariant
+             Spacestation__solaris___solaris__split_fields___].
+      ((((((Spacestation__monitoringstation___axiom.dynamic_invariant
+              { Spacestation__monitoringstation.__split_fields =
+                  Spacestation__solaris___solaris__split_fields___ })
+             True)
+            True)
+           True)
+          True) ->
+         (let result =
+            Spacestation__orbitheightinvariant.orbitheightinvariant
+              Spacestation__solaris___solaris__split_fields___ in
+          if ((Spacestation__orbitheightinvariant.orbitheightinvariant__function_guard
+                 result)
+                Spacestation__solaris___solaris__split_fields___) then
+            ((true /\ true) /\ true)
+          else true))
+  
+  axiom orbitheightinvariant__def_axiom:
+    forall Spacestation__solaris___solaris__split_fields___ : Spacestation__monitoringstation.__split_fields
+          [Spacestation__orbitheightinvariant.orbitheightinvariant
+             Spacestation__solaris___solaris__split_fields___].
+      ((Spacestation__orbitheightinvariant.orbitheightinvariant
+          Spacestation__solaris___solaris__split_fields___)
+         = (((Spacestation__orbitheight__rep.to_rep
+                ((Spacestation__monitoringstation.__split_fields
+                     { Spacestation__monitoringstation.__split_fields =
+                         Spacestation__solaris___solaris__split_fields___ }).
+                   Spacestation__monitoringstation.rec__spacestation__monitoringstation__height))
+               >= (300 : int)) /\
+              ((Spacestation__orbitheight__rep.to_rep
+                  ((Spacestation__monitoringstation.__split_fields
+                       { Spacestation__monitoringstation.__split_fields =
+                           Spacestation__solaris___solaris__split_fields___ }).
+                     Spacestation__monitoringstation.rec__spacestation__monitoringstation__height))
+                 <= (450 : int))))
+end
+
+module Spacestation__airlockstatus___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use Spacestation__airlockstatus as Spacestation__airlockstatus
+  
+  predicate dynamic_invariant (temp___expr_168: int) (temp___is_init_164: bool) (temp___skip_constant_165: bool) (temp___do_toplevel_166: bool) (temp___do_typ_inv_167: bool) =
+    if ((temp___is_init_164 = True) \/
+          (Spacestation__airlockstatus.first
+             <= Spacestation__airlockstatus.last)) then
+      (((Spacestation__airlockstatus.dynamic_property
+           Spacestation__airlockstatus.first)
+          Spacestation__airlockstatus.last)
+         temp___expr_168)
+    else true
+  
+  val dynamic_invariant (temp___expr_168: int) (temp___is_init_164: bool) (temp___skip_constant_165: bool) (temp___do_toplevel_166: bool) (temp___do_typ_inv_167: bool) : 
+    bool
+    ensures { result
+                <->
+                (((((dynamic_invariant (temp___expr_168 : int))
+                      (temp___is_init_164 : bool))
+                     (temp___skip_constant_165 : bool))
+                    (temp___do_toplevel_166 : bool))
+                   (temp___do_typ_inv_167 : bool)) }
+  
+  predicate default_initial_assumption (temp___expr_169: int) (temp___skip_top_level_170: bool) =
+    true
+  
+  val default_initial_assumption (temp___expr_169: int) (temp___skip_top_level_170: bool) : 
+    bool
+    ensures { result
+                <->
+                ((default_initial_assumption (temp___expr_169 : int))
+                   (temp___skip_top_level_170 : bool)) }
+end
+
+module Spacestation__orbitheight___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use Spacestation__orbitheight as Spacestation__orbitheight
+  
+  predicate dynamic_invariant (temp___expr_175: int) (temp___is_init_171: bool) (temp___skip_constant_172: bool) (temp___do_toplevel_173: bool) (temp___do_typ_inv_174: bool) =
+    if ((temp___is_init_171 = True) \/
+          (Spacestation__orbitheight.first <= Spacestation__orbitheight.last)) then
+      (((Spacestation__orbitheight.dynamic_property
+           Spacestation__orbitheight.first)
+          Spacestation__orbitheight.last)
+         temp___expr_175)
+    else true
+  
+  val dynamic_invariant (temp___expr_175: int) (temp___is_init_171: bool) (temp___skip_constant_172: bool) (temp___do_toplevel_173: bool) (temp___do_typ_inv_174: bool) : 
+    bool
+    ensures { result
+                <->
+                (((((dynamic_invariant (temp___expr_175 : int))
+                      (temp___is_init_171 : bool))
+                     (temp___skip_constant_172 : bool))
+                    (temp___do_toplevel_173 : bool))
+                   (temp___do_typ_inv_174 : bool)) }
+  
+  predicate default_initial_assumption (temp___expr_176: int) (temp___skip_top_level_177: bool) =
+    true
+  
+  val default_initial_assumption (temp___expr_176: int) (temp___skip_top_level_177: bool) : 
+    bool
+    ensures { result
+                <->
+                ((default_initial_assumption (temp___expr_176 : int))
+                   (temp___skip_top_level_177 : bool)) }
+end
+
+module Spacestation__module___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use Spacestation__module as Spacestation__module
+  
+  predicate dynamic_invariant (temp___expr_182: int) (temp___is_init_178: bool) (temp___skip_constant_179: bool) (temp___do_toplevel_180: bool) (temp___do_typ_inv_181: bool) =
+    if ((temp___is_init_178 = True) \/
+          (Spacestation__module.first <= Spacestation__module.last)) then
+      (((Spacestation__module.dynamic_property Spacestation__module.first)
+          Spacestation__module.last)
+         temp___expr_182)
+    else true
+  
+  val dynamic_invariant (temp___expr_182: int) (temp___is_init_178: bool) (temp___skip_constant_179: bool) (temp___do_toplevel_180: bool) (temp___do_typ_inv_181: bool) : 
+    bool
+    ensures { result
+                <->
+                (((((dynamic_invariant (temp___expr_182 : int))
+                      (temp___is_init_178 : bool))
+                     (temp___skip_constant_179 : bool))
+                    (temp___do_toplevel_180 : bool))
+                   (temp___do_typ_inv_181 : bool)) }
+  
+  predicate default_initial_assumption (temp___expr_183: int) (temp___skip_top_level_184: bool) =
+    true
+  
+  val default_initial_assumption (temp___expr_183: int) (temp___skip_top_level_184: bool) : 
+    bool
+    ensures { result
+                <->
+                ((default_initial_assumption (temp___expr_183 : int))
+                   (temp___skip_top_level_184 : bool)) }
+end
+
+module Spacestation__modulestack___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+  use Array__Int__Spacestation__module as Array__Int__Spacestation__module
+  use Array__Int__Spacestation__module as Array__Int__Spacestation__module
+  
+  predicate dynamic_invariant (temp___expr_196: Array__Int__Spacestation__module.map) (temp___is_init_192: bool) (temp___skip_constant_193: bool) (temp___do_toplevel_194: bool) (temp___do_typ_inv_195: bool) =
+    true
+  
+  val dynamic_invariant (temp___expr_196: Array__Int__Spacestation__module.map) (temp___is_init_192: bool) (temp___skip_constant_193: bool) (temp___do_toplevel_194: bool) (temp___do_typ_inv_195: bool) : 
+    bool
+    ensures { result
+                <->
+                (((((dynamic_invariant
+                       (temp___expr_196 :
+                          Array__Int__Spacestation__module.map))
+                      (temp___is_init_192 : bool))
+                     (temp___skip_constant_193 : bool))
+                    (temp___do_toplevel_194 : bool))
+                   (temp___do_typ_inv_195 : bool)) }
+  
+  predicate default_initial_assumption (temp___expr_198: Array__Int__Spacestation__module.map) (temp___skip_top_level_199: bool) =
+    true
+  
+  val default_initial_assumption (temp___expr_198: Array__Int__Spacestation__module.map) (temp___skip_top_level_199: bool) : 
+    bool
+    ensures { result
+                <->
+                ((default_initial_assumption
+                    (temp___expr_198 : Array__Int__Spacestation__module.map))
+                   (temp___skip_top_level_199 : bool)) }
+end
+
+module Spacestation__solaris___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+end
+
+module Spacestation__increaseheight__subprogram_def
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use Spacestation__solaris as Spacestation__solaris
+  use Spacestation__monitoringstation as Spacestation__monitoringstation
+  use Spacestation__monitoringstation___axiom as Spacestation__monitoringstation___axiom
+  use Spacestation__airlockinvariant as Spacestation__airlockinvariant
+  use Spacestation__airlockinvariant___axiom as Spacestation__airlockinvariant___axiom
+  use Spacestation__orbitheightinvariant as Spacestation__orbitheightinvariant
+  use Spacestation__orbitheightinvariant___axiom as Spacestation__orbitheightinvariant___axiom
+  use Spacestation__orbitheight as Spacestation__orbitheight
+  use Spacestation__orbitheight__rep as Spacestation__orbitheight__rep
+  use Spacestation__airlockstatus___axiom as Spacestation__airlockstatus___axiom
+  use Spacestation__orbitheight___axiom as Spacestation__orbitheight___axiom
+  use Spacestation__module___axiom as Spacestation__module___axiom
+  use Spacestation__modulestack___axiom as Spacestation__modulestack___axiom
+  use Spacestation__monitoringstation___axiom as Spacestation__monitoringstation___axiom
+  use Spacestation__solaris___axiom as Spacestation__solaris___axiom
+  use Spacestation__airlockinvariant___axiom as Spacestation__airlockinvariant___axiom
+  use Spacestation__orbitheightinvariant___axiom as Spacestation__orbitheightinvariant___axiom
+  
+  let def (__void_param : unit)
+    requires { [#"spacestation.ads" 65 0 0] true }
+    ensures { [#"spacestation.ads" 65 0 0]
+              [#"spacestation.ads" 70 0 0]
+              [@GP_Reason:VC_POSTCONDITION]
+              [@GP_Sloc:spacestation.ads:70:14]
+              [@GP_Shape:pragargs__andthen]
+              [@comment:     Post => solaris.height <= OrbitHeight'Last              ^ spacestation.ads:70:14:VC_POSTCONDITION]
+              [@model_vc_post]
+              [@GP_Id:5]
+              ((([@GP_Sloc:spacestation.ads:70:14]
+                 [@GP_Pretty_Ada:1166]
+                 ((Spacestation__orbitheight__rep.to_rep
+                     ((Spacestation__monitoringstation.__split_fields
+                          { Spacestation__monitoringstation.__split_fields =
+                              (Spacestation__monitoringstation.__split_fields__content
+                                  Spacestation__solaris.solaris__split_fields) }).
+                        Spacestation__monitoringstation.rec__spacestation__monitoringstation__height))
+                    <= (450 : int))) /\
+                  ([@GP_Pretty_Ada:1169]
+                   [@GP_Sloc:spacestation.ads:71:15]
+                   ((epsilon temp___result_301: bool.
+                       ((temp___result_301
+                           = (Spacestation__orbitheightinvariant.orbitheightinvariant
+                                (Spacestation__monitoringstation.__split_fields__content
+                                    Spacestation__solaris.solaris__split_fields))) /\
+                          ((Spacestation__orbitheightinvariant.orbitheightinvariant__function_guard
+                              temp___result_301)
+                             (Spacestation__monitoringstation.__split_fields__content
+                                 Spacestation__solaris.solaris__split_fields))))
+                      = True))) /\
+                 ([@GP_Sloc:spacestation.ads:72:15]
+                  [@GP_Pretty_Ada:1171]
+                  ((epsilon temp___result_302: bool.
+                      ((temp___result_302
+                          = (Spacestation__airlockinvariant.airlockinvariant
+                               (Spacestation__monitoringstation.__split_fields__content
+                                   Spacestation__solaris.solaris__split_fields))) /\
+                         ((Spacestation__airlockinvariant.airlockinvariant__function_guard
+                             temp___result_302)
+                            (Spacestation__monitoringstation.__split_fields__content
+                                Spacestation__solaris.solaris__split_fields))))
+                     = True))) }
+  = [@vc:divergent]
+    (([@GNAT-comment:Assume dynamic invariants of inputs of the subprogram spacestation.ads:65]
+      ());
+     assume {
+       ((((Spacestation__monitoringstation___axiom.dynamic_invariant
+             { Spacestation__monitoringstation.__split_fields =
+                 (Spacestation__monitoringstation.__split_fields__content
+                     Spacestation__solaris.solaris__split_fields) })
+            True)
+           False)
+          True)
+         True };
+     ([@GNAT-comment:Assume moved pointers in outputs of the subprogram spacestation.ads:65]
+      ());
+     ([@GNAT-comment:Check for RTE in the Pre of the subprogram spacestation.ads:65]
+      ());
+     (begin
+        ensures { true }
+        let _ =
+          let _ =
+            (((Spacestation__orbitheight__rep.to_rep
+                 ((Spacestation__monitoringstation.__split_fields
+                      { Spacestation__monitoringstation.__split_fields =
+                          (Spacestation__monitoringstation.__split_fields__content
+                              Spacestation__solaris.solaris__split_fields) }).
+                    Spacestation__monitoringstation.rec__spacestation__monitoringstation__height))
+                < (450 : int))
+              &&
+               (Spacestation__orbitheightinvariant___axiom.orbitheightinvariant
+                  ()))
+             && (Spacestation__airlockinvariant___axiom.airlockinvariant ()) in
+          () in
+        ()
+      end);
+     ([@GNAT-comment:Assume Pre of the subprogram spacestation.ads:65] ());
+     assume {
+       ((([@GP_Pretty_Ada:1152]
+          ((Spacestation__orbitheight__rep.to_rep
+              ((Spacestation__monitoringstation.__split_fields
+                   { Spacestation__monitoringstation.__split_fields =
+                       (Spacestation__monitoringstation.__split_fields__content
+                           Spacestation__solaris.solaris__split_fields) }).
+                 Spacestation__monitoringstation.rec__spacestation__monitoringstation__height))
+             < (450 : int))) /\
+           ([@GP_Pretty_Ada:1155]
+            ((epsilon temp___result_299: bool.
+                ((temp___result_299
+                    = (Spacestation__orbitheightinvariant.orbitheightinvariant
+                         (Spacestation__monitoringstation.__split_fields__content
+                             Spacestation__solaris.solaris__split_fields))) /\
+                   ((Spacestation__orbitheightinvariant.orbitheightinvariant__function_guard
+                       temp___result_299)
+                      (Spacestation__monitoringstation.__split_fields__content
+                          Spacestation__solaris.solaris__split_fields))))
+               = True))) /\
+          ([@GP_Pretty_Ada:1157]
+           ((epsilon temp___result_300: bool.
+               ((temp___result_300
+                   = (Spacestation__airlockinvariant.airlockinvariant
+                        (Spacestation__monitoringstation.__split_fields__content
+                            Spacestation__solaris.solaris__split_fields))) /\
+                  ((Spacestation__airlockinvariant.airlockinvariant__function_guard
+                      temp___result_300)
+                     (Spacestation__monitoringstation.__split_fields__content
+                         Spacestation__solaris.solaris__split_fields))))
+              = True))) };
+     (try
+        ([@GP_Sloc:spacestation.adb:25:7] [#"spacestation.adb" 25 0 0] ());
+        ([@GP_Sloc:spacestation.adb:25:25] [#"spacestation.adb" 25 0 0] ());
+        ([@GP_Sloc:spacestation.adb:25:22]
+         [#"spacestation.adb" 25 0 0]
+         (let temp___296 =
+            let temp___295 =
+              { Spacestation__monitoringstation.__split_fields =
+                  (Spacestation__monitoringstation.__split_fields__content
+                      Spacestation__solaris.solaris__split_fields) } in
+            ([#"spacestation.adb" 25 0 0]
+             (begin
+                ensures { true }
+                let _ =
+                  let _ =
+                    (Spacestation__monitoringstation.__split_fields
+                        temp___295).Spacestation__monitoringstation.rec__spacestation__monitoringstation__height in
+                  () in
+                ()
+              end));
+            ({ temp___295 with
+               Spacestation__monitoringstation.__split_fields =
+                 ({ (Spacestation__monitoringstation.__split_fields
+                        temp___295) with
+                    Spacestation__monitoringstation.rec__spacestation__monitoringstation__height =
+                      (Spacestation__orbitheight__rep.of_rep
+                         ([#"spacestation.adb" 25 0 0]
+                          [@GP_Sloc:spacestation.adb:25:40]
+                          [@vc:annotation]
+                          [@comment:      solaris.height := solaris.height + 1;                                        ^ spacestation.adb:25:40:VC_RANGE_CHECK]
+                          [@GP_Shape:solaris_assign__add]
+                          [@GP_Reason:VC_RANGE_CHECK]
+                          [@GP_Id:4]
+                          (Spacestation__orbitheight.range_check_
+                             ((Spacestation__orbitheight__rep.to_rep
+                                 ((Spacestation__monitoringstation.__split_fields
+                                      { Spacestation__monitoringstation.__split_fields =
+                                          (Spacestation__monitoringstation.__split_fields__content
+                                              Spacestation__solaris.solaris__split_fields) }).
+                                    Spacestation__monitoringstation.rec__spacestation__monitoringstation__height))
+                                + (1 : int))))) }) }) in
+          Spacestation__solaris.solaris__split_fields.Spacestation__monitoringstation.__split_fields__content <-
+            (Spacestation__monitoringstation.__split_fields temp___296)));
+        (raise Return__exc)
+      with Return__exc -> ()
+      end);
+     (begin
+        ensures { true }
+        let _ =
+          let _ =
+            (((Spacestation__orbitheight__rep.to_rep
+                 ((Spacestation__monitoringstation.__split_fields
+                      { Spacestation__monitoringstation.__split_fields =
+                          (Spacestation__monitoringstation.__split_fields__content
+                              Spacestation__solaris.solaris__split_fields) }).
+                    Spacestation__monitoringstation.rec__spacestation__monitoringstation__height))
+                <= (450 : int))
+              &&
+               (Spacestation__orbitheightinvariant___axiom.orbitheightinvariant
+                  ()))
+             && (Spacestation__airlockinvariant___axiom.airlockinvariant ()) in
+          () in
+        ()
+      end))
+end

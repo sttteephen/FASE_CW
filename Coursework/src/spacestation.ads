@@ -3,10 +3,16 @@ package SpaceStation with SPARK_Mode is
    type AirLockStatus is (Open, Closed);
    type OrbitHeight is range 300..450;
    
+   type Module is (Occupied, Unoccupied);
+   type ModuleRange is range 0..20;
+   type ModuleStack is array (ModuleRange) of Module;
+   
    type MonitoringStation is record
       airLock1 : AirLockStatus := Closed;
       airLock2 : AirLockStatus := Closed;
       height : OrbitHeight := 400;
+      modules : ModuleStack;
+      modulesCount : ModuleRange := 0;
    end record;
       
    solaris : MonitoringStation;
@@ -17,6 +23,9 @@ package SpaceStation with SPARK_Mode is
    function OrbitHeightInvariant return Boolean is
       (solaris.height >= OrbitHeight'First and solaris.height <= OrbitHeight'Last);
    
+   function ModuleStackInvariant return Boolean is
+     (solaris.modulesCount >= ModuleRange'First and solaris.modulesCount <= ModuleRange'Last);
+
    
    -- air lock stuff
    procedure openAirLock1 with
@@ -75,5 +84,25 @@ package SpaceStation with SPARK_Mode is
      and then OrbitHeightInvariant 
      and then AirLockInvariant;
    
-      
+   
+   -- module stuff
+   function Empty return Boolean is (solaris.modulesCount < 1);
+
+   function Full return Boolean is (solaris.modulesCount = ModuleRange'Last);
+
+   procedure pushModule with
+     Global => (In_Out => solaris),
+     Pre => not Full,
+     Post => solaris.modulesCount = solaris.modulesCount'Old + 1;
+
+   procedure popModule with
+     Global => (In_Out => solaris),
+     Pre => not Empty,
+     Post => solaris.modulesCount = solaris.modulesCount'Old - 1;
+       
+   
+   -- space walk stuff
+   function spaceWalkSafe return Boolean is 
+     (solaris.modules(0) = Occupied and solaris.modules(solaris.modulesCount) = Occupied);
+   
 end SpaceStation;

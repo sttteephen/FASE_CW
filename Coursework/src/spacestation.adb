@@ -30,8 +30,16 @@ package body SpaceStation with SPARK_Mode is
       solaris.height := solaris.height - 1;
    end decreaseHeight;
    
+   procedure pushModule is
+      newModule : Module := Unoccupied;
+   begin
+      solaris.modulesCount := solaris.modulesCount + 1;
+      solaris.modules (solaris.modulesCount) := newModule;
+   end pushModule;
    
-      
-   
+   procedure popModule is
+   begin
+      solaris.modulesCount := solaris.modulesCount - 1;
+   end popModule;
 
 end SpaceStation;

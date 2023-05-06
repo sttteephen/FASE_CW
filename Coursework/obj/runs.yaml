@@ -104,3 +104,177 @@
     '
   output_parser: GNATprove_Parser
   timestamp: '2023-05-05T20:08:29.489000'
+'2023-05-06T00:08:59.849000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T00:08:59.849000'
+'2023-05-06T00:14:31.219000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T00:14:31.219000'
+'2023-05-06T00:27:54.591000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:1:14: error: missing body for "popStack" declared at spacestation.ads:83
+
+    spacestation.ads:86:58: error: invalid prefix in selected component "Length"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T00:27:54.591000'
+'2023-05-06T00:49:41.073000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.ads:90:44: error: expected type "Standard.Integer"
+
+    spacestation.ads:90:44: error: found type "ModuleRange" defined at line 7
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T00:49:41.073000'
+'2023-05-06T00:51:54.883000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T00:51:54.883000'
+'2023-05-06T00:54:41.666000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.ads:93:27: error: "solari" is undefined
+
+    spacestation.ads:93:27: error: possible misspelling of "solaris"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T00:54:41.666000'
+'2023-05-06T00:55:01.834000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T00:55:01.834000'
+'2023-05-06T01:04:10.196000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T01:04:10.196000'
+'2023-05-06T01:06:04.568000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T01:06:04.568000'
+'2023-05-06T01:06:10.916000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T01:06:10.916000'
+'2023-05-06T01:10:40.031000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T01:10:40.031000'
+'2023-05-06T01:35:48.992000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T01:35:48.992000'

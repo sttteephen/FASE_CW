@@ -1,0 +1,2 @@
+spacestation.adb:1:14: error: missing body for "popStack" declared at spacestation.ads:83
+spacestation.ads:86:58: error: invalid prefix in selected component "Length"

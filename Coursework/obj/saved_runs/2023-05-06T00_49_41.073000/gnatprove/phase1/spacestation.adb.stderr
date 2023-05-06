@@ -1,0 +1,2 @@
+spacestation.ads:90:44: error: expected type "Standard.Integer"
+spacestation.ads:90:44: error: found type "ModuleRange" defined at line 7
