@@ -1,0 +1,1 @@
+spacestation.adb:49:52: medium: range check might fail [reason for check: result of subtraction must fit in the target type of the assignment][#0]

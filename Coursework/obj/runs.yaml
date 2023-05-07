@@ -278,3 +278,1087 @@
     '
   output_parser: GNATprove_Parser
   timestamp: '2023-05-06T01:35:48.992000'
+'2023-05-06T20:40:25.697000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.ads:100:43: error: "modulesCount" is undefined
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T20:40:25.697000'
+'2023-05-06T20:40:38.652000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T20:40:38.652000'
+'2023-05-06T21:16:35.965000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:1:14: error: missing body for "crewMove" declared at spacestation.ads:108
+
+    spacestation.adb:46:04: error: duplicate body for "spaceWalkSafe" declared at
+    spacestation.ads:105
+
+    spacestation.adb:46:13: error: "spaceWalkSafe" conflicts with declaration at spacestation.ads:105
+
+    spacestation.ads:108:22: error: missing ";"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:16:35.965000'
+'2023-05-06T21:16:46.950000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:46:04: error: duplicate body for "spaceWalkSafe" declared at
+    spacestation.ads:105
+
+    spacestation.adb:46:13: error: "spaceWalkSafe" conflicts with declaration at spacestation.ads:105
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:16:46.950000'
+'2023-05-06T21:17:04.431000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:17:04.431000'
+'2023-05-06T21:27:59.544000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:47:28: error: "Occupied" is undefined (more references follow)
+
+    spacestation.ads:100:67: error: "Unoccupied" is undefined (more references follow)
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:27:59.544000'
+'2023-05-06T21:28:42.108000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.ads:100:67: error: "Unoccupied" is undefined (more references follow)
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:28:42.108000'
+'2023-05-06T21:29:05.636000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:34:29: error: "Unoccupied" is undefined
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:29:05.636000'
+'2023-05-06T21:29:25.653000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:29:25.653000'
+'2023-05-06T21:33:37.713000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:1:14: error: missing body for "crewMove" declared at spacestation.ads:107
+
+    spacestation.ads:107:59: error: formal parameter "Move" cannot be used before
+    end of specification
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:33:37.713000'
+'2023-05-06T21:36:07.107000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:52:03: error: statement expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:36:07.107000'
+'2023-05-06T21:39:03.854000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:49:67: error: formal parameter "Move" cannot be used before end
+    of specification
+
+    spacestation.adb:51:07: error: "ogModule" is undefined (more references follow)
+
+    spacestation.ads:107:67: error: formal parameter "Move" cannot be used before
+    end of specification
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:39:03.854000'
+'2023-05-06T21:41:00.180000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:49:67: error: formal parameter "Move" cannot be used before end
+    of specification
+
+    spacestation.adb:51:07: error: "enterModule" is undefined
+
+    spacestation.adb:52:07: error: "ogModule" is undefined (more references follow)
+
+    spacestation.ads:107:67: error: formal parameter "Move" cannot be used before
+    end of specification
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:41:00.180000'
+'2023-05-06T21:41:37.115000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:49:71: error: formal parameter "Move" cannot be used before end
+    of specification
+
+    spacestation.adb:51:07: error: "enterModule" is undefined
+
+    spacestation.adb:52:07: error: "ogModule" is undefined (more references follow)
+
+    spacestation.ads:107:71: error: formal parameter "Move" cannot be used before
+    end of specification
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:41:37.115000'
+'2023-05-06T21:42:44.136000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:49:71: error: formal parameter "Move" cannot be used before end
+    of specification
+
+    spacestation.adb:51:07: error: "ogModule" is undefined (more references follow)
+
+    spacestation.ads:107:71: error: formal parameter "Move" cannot be used before
+    end of specification
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:42:44.136000'
+'2023-05-06T21:44:47.363000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:51:07: error: "ogModule" is undefined (more references follow)
+
+    spacestation.adb:52:35: error: invalid operand types for operator "-"
+
+    spacestation.adb:52:35: error: left operand has type "ModuleRange" defined at
+    spacestation.ads:6
+
+    spacestation.adb:52:35: error: right operand has type "Move" defined at spacestation.ads:8
+
+    spacestation.adb:52:77: error: invalid operand types for operator "-"
+
+    spacestation.adb:52:77: error: left operand has type "ModuleRange" defined at
+    spacestation.ads:6
+
+    spacestation.adb:52:77: error: right operand has type "Move" defined at spacestation.ads:8
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:44:47.363000'
+'2023-05-06T21:45:22.957000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:52:35: error: invalid operand types for operator "-"
+
+    spacestation.adb:52:35: error: left operand has type "ModuleRange" defined at
+    spacestation.ads:6
+
+    spacestation.adb:52:35: error: right operand has type "Move" defined at spacestation.ads:8
+
+    spacestation.adb:52:77: error: invalid operand types for operator "-"
+
+    spacestation.adb:52:77: error: left operand has type "ModuleRange" defined at
+    spacestation.ads:6
+
+    spacestation.adb:52:77: error: right operand has type "Move" defined at spacestation.ads:8
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:45:22.957000'
+'2023-05-06T21:45:57.676000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:49:14: error: not fully conformant with declaration at spacestation.ads:107
+
+    spacestation.adb:49:14: error: mode of "moduleIndex" does not match
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:45:57.676000'
+'2023-05-06T21:46:16.218000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:52:35: error: invalid operand types for operator "-"
+
+    spacestation.adb:52:35: error: left operand has type "ModuleRange" defined at
+    spacestation.ads:6
+
+    spacestation.adb:52:35: error: right operand has type "Move" defined at spacestation.ads:8
+
+    spacestation.adb:52:77: error: invalid operand types for operator "-"
+
+    spacestation.adb:52:77: error: left operand has type "ModuleRange" defined at
+    spacestation.ads:6
+
+    spacestation.adb:52:77: error: right operand has type "Move" defined at spacestation.ads:8
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:46:16.218000'
+'2023-05-06T21:48:17.585000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacestation.adb:51:68: medium: range check might fail [reason for check: result
+    of subtraction must fit in the target type of the assignment] [possible fix: subprogram
+    at spacestation.ads:107 should mention moduleIndex and solaris in a precondition][#0]
+
+    spacestation.adb:52:77: medium: array index check might fail [reason for check:
+    result of subtraction must be a valid index into the array] [possible fix: subprogram
+    at spacestation.ads:107 should mention moduleIndex and moveDir in a precondition][#1]
+
+    spacestation.adb:52:88: medium: range check might fail [reason for check: result
+    of addition must fit in the target type of the assignment] [possible fix: subprogram
+    at spacestation.ads:107 should mention moduleIndex and moveDir and solaris in
+    a precondition][#2]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:48:17.585000'
+'2023-05-06T21:48:32.754000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:52:35: error: invalid operand types for operator "-"
+
+    spacestation.adb:52:35: error: left operand has type "ModuleRange" defined at
+    spacestation.ads:6
+
+    spacestation.adb:52:35: error: right operand has type "Move" defined at spacestation.ads:8
+
+    spacestation.adb:52:77: error: invalid operand types for operator "-"
+
+    spacestation.adb:52:77: error: left operand has type "ModuleRange" defined at
+    spacestation.ads:6
+
+    spacestation.adb:52:77: error: right operand has type "Move" defined at spacestation.ads:8
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:48:32.754000'
+'2023-05-06T21:51:07.269000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:52:61: error: invalid operand types for operator "-"
+
+    spacestation.adb:52:61: error: left operand has type "ModuleRange" defined at
+    spacestation.ads:6
+
+    spacestation.adb:52:61: error: right operand has type "Move" defined at spacestation.ads:8
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:51:07.269000'
+'2023-05-06T21:53:07.148000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:50:22: error: expected type "Standard.Integer"
+
+    spacestation.adb:50:22: error: found type "ModuleRange" defined at spacestation.ads:6
+
+    spacestation.adb:51:22: error: expected type "Standard.Integer"
+
+    spacestation.adb:51:22: error: found type "Move" defined at spacestation.ads:8
+
+    spacestation.adb:51:29: error: missing ";"
+
+    spacestation.adb:54:25: error: expected type "ModuleRange" defined at spacestation.ads:6
+
+    spacestation.adb:54:25: error: found type "Standard.Integer"
+
+    spacestation.adb:54:51: error: expected type "ModuleRange" defined at spacestation.ads:6
+
+    spacestation.adb:54:51: error: found type "Standard.Integer"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:53:07.148000'
+'2023-05-06T21:54:17.516000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:54:25: error: expected type "ModuleRange" defined at spacestation.ads:6
+
+    spacestation.adb:54:25: error: found type "Standard.Integer"
+
+    spacestation.adb:54:51: error: expected type "ModuleRange" defined at spacestation.ads:6
+
+    spacestation.adb:54:51: error: found type "Standard.Integer"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:54:17.516000'
+'2023-05-06T21:55:22.665000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacestation.adb:53:68: medium: range check might fail [reason for check: result
+    of subtraction must fit in the target type of the assignment] [possible fix: subprogram
+    at spacestation.ads:107 should mention moduleIndex and solaris in a precondition][#0]
+
+    spacestation.adb:54:76: medium: range check might fail [reason for check: result
+    of subtraction must be convertible to the target type of the conversion][#1]
+
+    spacestation.adb:54:82: medium: range check might fail [reason for check: result
+    of addition must fit in the target type of the assignment] [possible fix: subprogram
+    at spacestation.ads:107 should mention solaris in a precondition][#2]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:55:22.665000'
+'2023-05-06T21:57:49.622000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.ads:109:12: error: operator "Not" not defined for type "ModuleRange"
+    defined at line 6
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:57:49.622000'
+'2023-05-06T21:58:14.971000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacestation.adb:53:68: medium: range check might fail [reason for check: result
+    of subtraction must fit in the target type of the assignment] [possible fix: precondition
+    of subprogram at spacestation.ads:107 should mention solaris][#0]
+
+    spacestation.adb:54:76: medium: range check might fail [reason for check: result
+    of subtraction must be convertible to the target type of the conversion][#1]
+
+    spacestation.adb:54:82: medium: range check might fail [reason for check: result
+    of addition must fit in the target type of the assignment] [possible fix: precondition
+    of subprogram at spacestation.ads:107 should mention solaris][#2]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:58:14.971000'
+'2023-05-06T21:59:12.905000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-06T21:59:12.905000'
+'2023-05-07T00:12:51.640000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:61:15: error: missing ";"
+
+    spacestation.ads:117:06: error: mixed logical operators in expression
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:12:51.640000'
+'2023-05-07T00:13:17.582000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.ads:117:06: error: mixed logical operators in expression
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:13:17.582000'
+'2023-05-07T00:13:47.402000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:3:14: error: missing body for "printStack" declared at spacestation.ads:122
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:13:47.402000'
+'2023-05-07T00:14:04.328000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:14:04.328000'
+'2023-05-07T00:15:20.012000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:15:20.012000'
+'2023-05-07T00:15:54.759000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:15:54.759000'
+'2023-05-07T00:16:17.278000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:16:17.278000'
+'2023-05-07T00:16:37.629000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:16:37.629000'
+'2023-05-07T00:34:08.308000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:55:23: error: value not in range of type "ModuleRange" defined
+    at spacestation.ads:6
+
+    spacestation.adb:55:23: error: "Constraint_Error" would have been raised at run
+    time
+
+    spacestation.ads:15:37: error: value not in range of type "ModuleRange" defined
+    at line 6
+
+    spacestation.ads:15:37: error: "Constraint_Error" would have been raised at run
+    time
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:34:08.308000'
+'2023-05-07T00:34:33.138000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.ads:15:37: error: value not in range of type "ModuleRange" defined
+    at line 6
+
+    spacestation.ads:15:37: error: "Constraint_Error" would have been raised at run
+    time
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:34:33.138000'
+'2023-05-07T00:35:19.834000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacestation.adb:49:52: medium: range check might fail [reason for check: result
+    of subtraction must fit in the target type of the assignment][#0]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:35:19.834000'
+'2023-05-07T00:36:17.286000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacestation.adb:49:52: medium: range check might fail [reason for check: result
+    of subtraction must fit in the target type of the assignment][#0]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:36:17.286000'
+'2023-05-07T00:37:00.734000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:37:00.734000'
+'2023-05-07T00:40:55.512000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:40:55.512000'
+'2023-05-07T00:42:34.978000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:42:34.978000'
+'2023-05-07T00:51:26.333000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T00:51:26.333000'
+'2023-05-07T01:00:27.766000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.ads:132:94: error: extra ";" ignored
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:00:27.766000'
+'2023-05-07T01:00:40.106000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:00:40.106000'
+'2023-05-07T01:04:40.353000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:57:31: error: illegal operand for numeric conversion
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:04:40.353000'
+'2023-05-07T01:07:09.140000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacestation.adb:57:07: warning: initialization of "d" has no effect[#0]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:07:09.140000'
+'2023-05-07T01:07:23.774000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:07:23.774000'
+'2023-05-07T01:10:27.303000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:10:27.303000'
+'2023-05-07T01:10:53.823000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.ads:142:89: error: value not in range of type "Module" defined at
+    line 5
+
+    spacestation.ads:142:89: error: static expression fails Constraint_Check
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:10:53.823000'
+'2023-05-07T01:12:27.986000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacestation.ads:143:15: warning: conjunct in postcondition does not check the
+    outcome of calling "crewMove" [-gnatw.t]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:12:27.986000'
+'2023-05-07T01:13:03.546000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacestation.ads:143:16: warning: conjunct in postcondition does not check the
+    outcome of calling "crewMove" [-gnatw.t]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:13:03.546000'
+'2023-05-07T01:14:01.999000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacestation.ads:143:08: warning: attribute "Old" applied to constant has no effect
+    [enabled by default]
+
+    spacestation.ads:143:20: warning: conjunct in postcondition does not check the
+    outcome of calling "crewMove" [-gnatw.t]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:14:01.999000'
+'2023-05-07T01:15:28.001000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:15:28.001000'
+'2023-05-07T01:17:50.710000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    main.adb:3:11: info: SPARK_Mode not applied to this compilation unit
+
+    main.adb:3:11: info: only enclosed declarations with SPARK_Mode will be analyzed
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:17:50.710000'
+'2023-05-07T01:18:18.283000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:18:18.283000'
+'2023-05-07T01:18:50.153000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:18:50.153000'
+'2023-05-07T01:21:18.146000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    main.adb:4:11: low: "solaris.modulesCount" might not be set after elaboration
+    of main program "Main"[#0]
+
+    main.adb:4:11: low: "solaris.airLock1" might not be set after elaboration of main
+    program "Main"[#1]
+
+    main.adb:4:11: low: "solaris.airLock2" might not be set after elaboration of main
+    program "Main"[#2]
+
+    main.adb:4:11: low: "solaris.height" might not be set after elaboration of main
+    program "Main"[#3]
+
+    main.adb:4:11: medium: "solaris.modules" might not be initialized after elaboration
+    of main program "Main"[#4]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:21:18.146000'
+'2023-05-07T01:24:32.499000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacestation.adb:3:14: error: missing body for "printStation" declared at spacestation.ads:129
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:24:32.499000'
+'2023-05-07T01:26:37.128000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:26:37.128000'
+'2023-05-07T01:38:44.295000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-07T01:38:44.295000'

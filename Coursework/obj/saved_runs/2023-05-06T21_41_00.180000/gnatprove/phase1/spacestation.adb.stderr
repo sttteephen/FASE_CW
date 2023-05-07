@@ -1,0 +1,4 @@
+spacestation.adb:49:67: error: formal parameter "Move" cannot be used before end of specification
+spacestation.adb:51:07: error: "enterModule" is undefined
+spacestation.adb:52:07: error: "ogModule" is undefined (more references follow)
+spacestation.ads:107:67: error: formal parameter "Move" cannot be used before end of specification

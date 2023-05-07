@@ -1,0 +1,2 @@
+spacestation.ads:142:89: error: value not in range of type "Module" defined at line 5
+spacestation.ads:142:89: error: static expression fails Constraint_Check

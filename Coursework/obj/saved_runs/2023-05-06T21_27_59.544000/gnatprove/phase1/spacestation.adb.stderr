@@ -1,0 +1,2 @@
+spacestation.adb:47:28: error: "Occupied" is undefined (more references follow)
+spacestation.ads:100:67: error: "Unoccupied" is undefined (more references follow)

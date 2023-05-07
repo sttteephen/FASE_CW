@@ -1,0 +1,9 @@
+spacestation.adb:50:22: error: expected type "Standard.Integer"
+spacestation.adb:50:22: error: found type "ModuleRange" defined at spacestation.ads:6
+spacestation.adb:51:22: error: expected type "Standard.Integer"
+spacestation.adb:51:22: error: found type "Move" defined at spacestation.ads:8
+spacestation.adb:51:29: error: missing ";"
+spacestation.adb:54:25: error: expected type "ModuleRange" defined at spacestation.ads:6
+spacestation.adb:54:25: error: found type "Standard.Integer"
+spacestation.adb:54:51: error: expected type "ModuleRange" defined at spacestation.ads:6
+spacestation.adb:54:51: error: found type "Standard.Integer"

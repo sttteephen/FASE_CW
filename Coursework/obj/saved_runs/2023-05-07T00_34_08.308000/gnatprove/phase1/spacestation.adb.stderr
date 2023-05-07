@@ -1,0 +1,4 @@
+spacestation.adb:55:23: error: value not in range of type "ModuleRange" defined at spacestation.ads:6
+spacestation.adb:55:23: error: "Constraint_Error" would have been raised at run time
+spacestation.ads:15:37: error: value not in range of type "ModuleRange" defined at line 6
+spacestation.ads:15:37: error: "Constraint_Error" would have been raised at run time

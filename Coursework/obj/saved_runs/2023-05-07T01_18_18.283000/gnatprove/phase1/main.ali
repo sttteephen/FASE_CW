@@ -1,0 +1,52 @@
+V "GNAT Lib v2021"
+M P W=b
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U main%b		main.adb		6e39cf66 OO SU
+W spacestation%s	spacestation.adb	spacestation.ali
+Z system%s		system.ads		system.ali
+
+D main.adb		20230507001808 d037e0a7 main%b
+D spacestation.ads	20230507001520 be0e2fc1 spacestation%s
+D system.ads		20210520051134 2ffa5114 system%s
+G a Z
+X 1 main.adb
+3U11*Main 3b11 8l5 8t9
+X 2 spacestation.ads
+1K9*SpaceStation 1|1w6 1r24 2|150e17
+
+QQ SPARKVERSION SPARK Community 2021 (20210519)
+GG EK_DIRECT_CALLS main 0
+GG EK_GLOBALS main local FALSE E_PROCEDURE FALSE ORIGIN_FLOW 0 proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_FLOW_SCOPE spacestation__empty FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__openairlock1 FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__airlockinvariant FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE system__Oeq FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__spacewalksafe FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__popmodule FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__full FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__closeairlock2 FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__orbitheightinvariant FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__pushmodule FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE main FALSE FALSE FALSE FALSE FALSE __standard
+GG EK_FLOW_SCOPE system__Olt FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__crewmove FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE system TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_FLOW_SCOPE system__Ole FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_FLOW_SCOPE spacestation__modulestackinvariant FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__closeairlock1 FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE system__Ogt FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__openairlock2 FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE system__Oge FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__increaseheight FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_FLOW_SCOPE spacestation__decreaseheight FALSE FALSE FALSE FALSE TRUE spacestation VISIBLE_PART
+GG EK_END_MARKER

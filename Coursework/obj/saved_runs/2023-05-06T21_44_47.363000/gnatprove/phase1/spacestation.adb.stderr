@@ -1,0 +1,7 @@
+spacestation.adb:51:07: error: "ogModule" is undefined (more references follow)
+spacestation.adb:52:35: error: invalid operand types for operator "-"
+spacestation.adb:52:35: error: left operand has type "ModuleRange" defined at spacestation.ads:6
+spacestation.adb:52:35: error: right operand has type "Move" defined at spacestation.ads:8
+spacestation.adb:52:77: error: invalid operand types for operator "-"
+spacestation.adb:52:77: error: left operand has type "ModuleRange" defined at spacestation.ads:6
+spacestation.adb:52:77: error: right operand has type "Move" defined at spacestation.ads:8

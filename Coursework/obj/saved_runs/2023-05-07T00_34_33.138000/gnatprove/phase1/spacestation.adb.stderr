@@ -1,0 +1,2 @@
+spacestation.ads:15:37: error: value not in range of type "ModuleRange" defined at line 6
+spacestation.ads:15:37: error: "Constraint_Error" would have been raised at run time

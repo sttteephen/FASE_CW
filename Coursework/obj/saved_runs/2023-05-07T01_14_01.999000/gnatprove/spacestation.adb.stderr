@@ -1,0 +1,2 @@
+spacestation.ads:143:08: warning: attribute "Old" applied to constant has no effect [enabled by default]
+spacestation.ads:143:20: warning: conjunct in postcondition does not check the outcome of calling "crewMove" [-gnatw.t]

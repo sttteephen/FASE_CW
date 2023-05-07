@@ -1,0 +1,1 @@
+spacestation.ads:143:16: warning: conjunct in postcondition does not check the outcome of calling "crewMove" [-gnatw.t]

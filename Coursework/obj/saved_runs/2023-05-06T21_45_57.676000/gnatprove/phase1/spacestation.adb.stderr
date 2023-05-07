@@ -1,0 +1,2 @@
+spacestation.adb:49:14: error: not fully conformant with declaration at spacestation.ads:107
+spacestation.adb:49:14: error: mode of "moduleIndex" does not match

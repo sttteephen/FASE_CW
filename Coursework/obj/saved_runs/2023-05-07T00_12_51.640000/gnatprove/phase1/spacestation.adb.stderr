@@ -1,0 +1,2 @@
+spacestation.adb:61:15: error: missing ";"
+spacestation.ads:117:06: error: mixed logical operators in expression

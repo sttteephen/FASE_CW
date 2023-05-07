@@ -1,0 +1,2 @@
+spacestation.adb:1:14: error: missing body for "crewMove" declared at spacestation.ads:107
+spacestation.ads:107:59: error: formal parameter "Move" cannot be used before end of specification

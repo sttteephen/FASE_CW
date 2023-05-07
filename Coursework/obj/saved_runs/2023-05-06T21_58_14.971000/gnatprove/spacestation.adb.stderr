@@ -1,0 +1,3 @@
+spacestation.adb:53:68: medium: range check might fail [reason for check: result of subtraction must fit in the target type of the assignment] [possible fix: precondition of subprogram at spacestation.ads:107 should mention solaris][#0]
+spacestation.adb:54:76: medium: range check might fail [reason for check: result of subtraction must be convertible to the target type of the conversion][#1]
+spacestation.adb:54:82: medium: range check might fail [reason for check: result of addition must fit in the target type of the assignment] [possible fix: precondition of subprogram at spacestation.ads:107 should mention solaris][#2]

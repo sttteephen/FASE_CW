@@ -1,0 +1,3 @@
+spacestation.adb:51:68: medium: range check might fail [reason for check: result of subtraction must fit in the target type of the assignment] [possible fix: subprogram at spacestation.ads:107 should mention moduleIndex and solaris in a precondition][#0]
+spacestation.adb:52:77: medium: array index check might fail [reason for check: result of subtraction must be a valid index into the array] [possible fix: subprogram at spacestation.ads:107 should mention moduleIndex and moveDir in a precondition][#1]
+spacestation.adb:52:88: medium: range check might fail [reason for check: result of addition must fit in the target type of the assignment] [possible fix: subprogram at spacestation.ads:107 should mention moduleIndex and moveDir and solaris in a precondition][#2]

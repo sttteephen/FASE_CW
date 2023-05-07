@@ -1,0 +1,1 @@
+spacestation.ads:109:12: error: operator "Not" not defined for type "ModuleRange" defined at line 6

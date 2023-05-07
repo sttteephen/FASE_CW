@@ -1,0 +1,3 @@
+spacestation.adb:52:61: error: invalid operand types for operator "-"
+spacestation.adb:52:61: error: left operand has type "ModuleRange" defined at spacestation.ads:6
+spacestation.adb:52:61: error: right operand has type "Move" defined at spacestation.ads:8

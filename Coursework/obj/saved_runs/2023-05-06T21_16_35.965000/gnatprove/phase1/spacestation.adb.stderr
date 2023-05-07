@@ -1,0 +1,4 @@
+spacestation.adb:1:14: error: missing body for "crewMove" declared at spacestation.ads:108
+spacestation.adb:46:04: error: duplicate body for "spaceWalkSafe" declared at spacestation.ads:105
+spacestation.adb:46:13: error: "spaceWalkSafe" conflicts with declaration at spacestation.ads:105
+spacestation.ads:108:22: error: missing ";"

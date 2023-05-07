@@ -1,0 +1,140 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_ENUMERATION_MAPS
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U spacestation%b	spacestation.adb	8424a26f NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+
+U spacestation%s	spacestation.ads	d091f373 EE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D spacestation.ads	20230507003750 d091f373 spacestation%s
+D spacestation.adb	20230507004958 fa418471 spacestation%b
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s s [TmodulestackBIP spacestation 7 4 none]
+G c Z s s [monitoringstationIP spacestation 10 9 none]
+G c Z s s [airlockinvariant spacestation 20 13 none]
+G c Z s s [orbitheightinvariant spacestation 23 13 none]
+G c Z s s [modulestackinvariant spacestation 26 13 none]
+G c Z s b [openairlock1 spacestation 31 14 none]
+G c Z s b [openairlock2 spacestation 43 14 none]
+G c Z s b [closeairlock1 spacestation 55 14 none]
+G c Z s b [closeairlock2 spacestation 65 14 none]
+G c Z s b [increaseheight spacestation 77 14 none]
+G c Z s b [decreaseheight spacestation 89 14 none]
+G c Z s s [empty spacestation 103 13 none]
+G c Z s s [full spacestation 105 13 none]
+G c Z s b [pushmodule spacestation 107 14 none]
+G c Z s b [popmodule spacestation 118 14 none]
+G c Z s b [printstation spacestation 129 14 none]
+G c Z s s [spacewalksafe spacestation 132 13 none]
+G c Z s b [crewmove spacestation 135 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r45 54r7 55r7 56r7 57r7 58r7 60r10
+X 9 a-textio.ads
+58K13*Text_IO 725e16 14|1w10 1r49 54r11 55r11 56r11 57r11 58r11 60r14
+262U14*New_Line 14|62s7
+463U14*Put 14|54s19 55s19 56s19 57s19 58s19 60s22
+X 13 spacestation.ads
+1K9*SpaceStation 151l5 151e17 14|3b14 81l5 81t17
+3E9*AirLockStatus 3e40 11r18 12r18 14|54r24 55r24
+3n27*Open{3E9} 37r33 49r33 14|8r27 13r27
+3n33*Closed{3E9} 11r35 12r35 21r26 21r55 33r32 38r29 45r32 50r29 60r33 70r33
+. 14|18r27 23r27
+4I9*OrbitHeight<short_integer> 13r16 24r26 24r66 79r30 83r32 91r30 95r32
+. 14|56r24
+5I9*Module<short_short_integer> 7r47 14|41r19 60r27
+6I9*ModuleRange<short_short_integer> 7r31 15r22 15r37 27r31 27r77 103r61
+. 105r60 133r24 135r40 14|59r16 67r40 78r23 78r62
+7A9*ModuleStack(5I9)<6I9> 14r17
+8E9*Move 8e30 135r66 14|67r66
+8n18*Left{8E9} 138r47 14|71r20
+8n24*Right{8E9} 139r48
+10R9*MonitoringStation 16e14 18r14
+11e7*airLock1{3E9} 21r15 37r22 45r21 50r18 60r22 14|8m15 18m15 54r52
+12e7*airLock2{3E9} 21r44 33r21 38r18 49r22 70r22 14|13m15 23m15 55r52
+13i7*height{4I9} 24r16 24r56 79r21 83r22 84r18 84r35 91r21 95r22 96r18 96r35
+. 14|30m15 30r33 35m15 35r33 56r50
+14a7*modules{7A9} 120r35 133r16 133r59 137r21 144r17 144r52 145r19 145r53
+. 14|44m15 60r48 77m15 77r47 78m15 78r54
+15i7*modulesCount{6I9} 27r15 27r61 103r46 105r45 113r22 113r45 120r51 124r22
+. 124r45 133r75 14|43m15 43r39 44r32 49m15 49r39 59r43
+18r4*solaris{10R9} 21r7 21r36 24r8 24r48 27r7 27r53 32r27 33r13 37r14 38r10
+. 44r27 45r13 49r14 50r10 56r27 60r14 66r27 70r14 78r27 79r13 83r14 84r10
+. 84r27 90r27 91r13 95r14 96r10 96r27 103r38 105r37 108r27 113r14 113r37
+. 119r27 120r27 120r43 124r14 124r37 133r8 133r51 133r67 136r27 137r13 144r9
+. 144r44 145r11 145r45 14|8m7 13m7 18m7 23m7 30m7 30r25 35m7 35r25 43m7 43r31
+. 44m7 44r24 49m7 49r31 54r44 55r44 56r42 59r35 60r40 77m7 77r39 78m7 78r46
+20V13*AirLockInvariant{boolean} 34s10 39s10 46s10 51s10 57s13 61s10 67s13
+. 71s10 80s10 85s10 92s10 97s10 110s10 114s10 121s10 125s10 140s10 146s10
+23V13*OrbitHeightInvariant{boolean} 35s10 40s10 47s10 52s10 58s10 62s10 68s10
+. 72s10 81s10 86s10 93s10 98s10 111s10 115s10 122s10 126s10 141s10 147s10
+26V13*ModuleStackInvariant{boolean} 36s10 41s10 48s10 53s10 59s10 63s10 69s10
+. 73s10 82s10 87s10 94s10 99s10 112s10 116s10 123s10 127s10 142s10 148s10
+31U14*openAirLock1 14|6b14 9l8 9t20
+43U14*openAirLock2 14|11b14 14l8 14t20
+55U14*closeAirLock1 14|16b14 19l8 19t21
+65U14*closeAirLock2 14|21b14 24l8 24t21
+77U14*increaseHeight 14|28b14 31l8 31t22
+89U14*decreaseHeight 14|33b14 36l8 36t22
+103V13*Empty{boolean} 120s17
+105V13*Full{boolean} 109s17
+107U14*pushModule 14|40b14 45l8 45t18
+118U14*popModule 14|47b14 50l8 50t17
+129U14*printStation 14|52b14 63l8 63t20
+132V13*spaceWalkSafe{boolean}
+135U14*crewMove 135>23 135>53 14|67b14 79l8 79t16
+135i23 moduleIndex{6I9} 137r29 138r16 139r16 144r25 144r60 145r27 145r61
+. 14|67b23 68r31 77r23 77r55
+135e53 moveDir{8E9} 138r37 139r38 14|67b53 71r10
+X 14 spacestation.adb
+41i7 newModule{13|5I9} 44r49
+59i11 I<short_short_integer> 60r56
+68i7 i{integer} 78r35 78r74
+69i7 d{integer} 72m10 74m10 78r39 78r78
+
