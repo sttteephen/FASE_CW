@@ -17,7 +17,7 @@ begin
    crewMove(1, Right);
    crewMove(1, Right);
    crewMove(1, Right);
-   printStation;
+
 
    null;
 end Main;
