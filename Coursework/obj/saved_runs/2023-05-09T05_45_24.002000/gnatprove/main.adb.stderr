@@ -1,0 +1,5 @@
+main.adb:4:11: low: "solaris.modulesCount" might not be set after elaboration of main program "Main"[#0]
+main.adb:4:11: low: "solaris.airLock1" might not be set after elaboration of main program "Main"[#1]
+main.adb:4:11: low: "solaris.airLock2" might not be set after elaboration of main program "Main"[#2]
+main.adb:4:11: low: "solaris.height" might not be set after elaboration of main program "Main"[#3]
+main.adb:4:11: medium: "solaris.modules" might not be initialized after elaboration of main program "Main"[#4]

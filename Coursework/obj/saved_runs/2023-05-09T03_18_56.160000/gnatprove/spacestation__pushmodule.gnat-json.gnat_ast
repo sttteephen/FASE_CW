@@ -1,0 +1,1180 @@
+(* Module for axiomatizing type "airlockstatus" defined at spacestation.ads:3, created in Gnat2Why.Types.Translate_Type *)
+module Spacestation__airlockstatus
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type airlockstatus  
+  
+  function   first () requires { True } ensures  { True } returns int = 0
+  
+  function   last () requires { True } ensures  { True } returns int = 1
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = airlockstatus,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type airlockstatus__ref  = { mutable airlockstatus__content : airlockstatus }
+  
+  function   airlockstatus__ref_airlockstatus__content__projection
+    (a : airlockstatus__ref) requires {  } ensures  {  } returns
+    airlockstatus = a.airlockstatus__content
+  
+  meta model_projection function airlockstatus__ref_airlockstatus__content__projection
+  
+  meta inline:no function airlockstatus__ref_airlockstatus__content__projection
+  
+  function   airlockstatus__havoc (x : airlockstatus__ref) requires {  }
+    ensures  {  } returns unit
+
+end
+
+(* Module defining to_rep/of_rep for type "airlockstatus" defined at spacestation.ads:3, created in Gnat2Why.Types.Translate_Type *)
+module Spacestation__airlockstatus__rep
+  
+  use        Spacestation__airlockstatus
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  clone export ada__model.Rep_Proj_Int with axiom . type t = Spacestation__airlockstatus.airlockstatus,
+    predicate in_range = Spacestation__airlockstatus.in_range
+  
+  meta model_projection function to_rep
+  
+  meta inline:no function to_rep
+
+end
+
+(* Module for axiomatizing type "orbitheight" defined at spacestation.ads:4, created in Gnat2Why.Types.Translate_Type *)
+module Spacestation__orbitheight
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type orbitheight  = <range 350 450>
+  
+  function   first () requires { True } ensures  { True } returns int = 350
+  
+  function   last () requires { True } ensures  { True } returns int = 450
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = orbitheight,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type orbitheight__ref  = { mutable orbitheight__content : orbitheight }
+  
+  function   orbitheight__ref_orbitheight__content__projection
+    (a : orbitheight__ref) requires {  } ensures  {  } returns
+    orbitheight = a.orbitheight__content
+  
+  meta model_projection function orbitheight__ref_orbitheight__content__projection
+  
+  meta inline:no function orbitheight__ref_orbitheight__content__projection
+  
+  function   orbitheight__havoc (x : orbitheight__ref) requires {  } ensures 
+    {  } returns unit
+
+end
+
+(* Module defining to_rep/of_rep for type "orbitheight" defined at spacestation.ads:4, created in Gnat2Why.Types.Translate_Type *)
+module Spacestation__orbitheight__rep
+  
+  use        Spacestation__orbitheight
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  function   to_rep (x : Spacestation__orbitheight.orbitheight) requires
+    { True } ensures  { True } returns
+    int = (Spacestation__orbitheight.orbitheight'int x)
+  
+  clone export ada__model.Rep_Proj_Int with axiom . type t = Spacestation__orbitheight.orbitheight,
+    predicate in_range = Spacestation__orbitheight.in_range,
+    function to_rep = to_rep
+  
+  meta model_projection function to_rep
+  
+  meta inline:no function to_rep
+
+end
+
+(* Module for axiomatizing type "modulerange" defined at spacestation.ads:6, created in Gnat2Why.Types.Translate_Type *)
+module Spacestation__modulerange
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type modulerange  = <range 1 20>
+  
+  function   first () requires { True } ensures  { True } returns int = 1
+  
+  function   last () requires { True } ensures  { True } returns int = 20
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = modulerange,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type modulerange__ref  = { mutable modulerange__content : modulerange }
+  
+  function   modulerange__ref_modulerange__content__projection
+    (a : modulerange__ref) requires {  } ensures  {  } returns
+    modulerange = a.modulerange__content
+  
+  meta model_projection function modulerange__ref_modulerange__content__projection
+  
+  meta inline:no function modulerange__ref_modulerange__content__projection
+  
+  function   modulerange__havoc (x : modulerange__ref) requires {  } ensures 
+    {  } returns unit
+
+end
+
+(* Module defining to_rep/of_rep for type "modulerange" defined at spacestation.ads:6, created in Gnat2Why.Types.Translate_Type *)
+module Spacestation__modulerange__rep
+  
+  use        Spacestation__modulerange
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  function   to_rep (x : Spacestation__modulerange.modulerange) requires
+    { True } ensures  { True } returns
+    int = (Spacestation__modulerange.modulerange'int x)
+  
+  clone export ada__model.Rep_Proj_Int with axiom . type t = Spacestation__modulerange.modulerange,
+    predicate in_range = Spacestation__modulerange.in_range,
+    function to_rep = to_rep
+  
+  meta model_projection function to_rep
+  
+  meta inline:no function to_rep
+
+end
+
+(* Module for axiomatizing type "module" defined at spacestation.ads:5, created in Gnat2Why.Types.Translate_Type *)
+module Spacestation__module
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type module__  = <range 0 3>
+  
+  function   first () requires { True } ensures  { True } returns int = 0
+  
+  function   last () requires { True } ensures  { True } returns int = 3
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = module__,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type module____ref  = { mutable module____content : module__ }
+  
+  function   module____ref_module____content__projection (a : module____ref)
+    requires {  } ensures  {  } returns module__ = a.module____content
+  
+  meta model_projection function module____ref_module____content__projection
+  
+  meta inline:no function module____ref_module____content__projection
+  
+  function   module____havoc (x : module____ref) requires {  } ensures  {  }
+    returns unit
+
+end
+
+(* Module defining to_rep/of_rep for type "module" defined at spacestation.ads:5, created in Gnat2Why.Types.Translate_Type *)
+module Spacestation__module__rep
+  
+  use        Spacestation__module
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  function   to_rep (x : Spacestation__module.module__) requires { True }
+    ensures  { True } returns int = (Spacestation__module.module__'int x)
+  
+  clone export ada__model.Rep_Proj_Int with axiom . type t = Spacestation__module.module__,
+    predicate in_range = Spacestation__module.in_range,
+    function to_rep = to_rep
+  
+  meta model_projection function to_rep
+  
+  meta inline:no function to_rep
+
+end
+
+(* Module for axiomatizing the array theory associated to type "TmodulestackB" defined at spacestation.ads:7, created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+module Array__Int__Spacestation__module
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacestation__module
+  use        Spacestation__module__rep
+  
+  function   index_I1_one () requires { True } ensures  { True } returns
+    int = 1
+  
+  type component_type  = --pp_transparent_type_definition NOT IMPLEMENTED
+  
+  clone export _gnatprove_standard.Array__1 with axiom . type I1.t = int,
+    predicate I1.le = <=, predicate I1.lt = <, predicate I1.gt = >,
+    function I1.add = +, function I1.sub = -, function I1.one = index_I1_one,
+    type component_type = component_type
+  
+  function   bool_eq
+    (a : map a__first : int a__last : int b : map b__first : int
+    b__last : int) requires { True } ensures  { True } returns
+    bool = ((if (a__first <= a__last) then
+            ((b__first <= b__last) /\
+               ((a__last - a__first) = (b__last - b__first)))
+             else (b__first > b__last)) /\
+              --pp_universal_quantif NOT IMPLEMENTED)
+  
+  axiom bool_eq_rev : --pp_universal_quantif NOT IMPLEMENTED
+
+end
+
+(* Module for axiomatizing type "modulestack" defined at spacestation.ads:7, created in Gnat2Why.Types.Translate_Type *)
+module Spacestation__modulestack
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacestation__module
+  use        Array__Int__Spacestation__module
+  
+  type component_type  = --pp_transparent_type_definition NOT IMPLEMENTED
+  
+  function   first () requires {  } ensures  {  } returns int = 1
+  
+  function   last () requires {  } ensures  {  } returns int = 20
+  
+  clone export ada__model.Constr_Array with axiom . type map = Array__Int__Spacestation__module.map,
+    function array_bool_eq = Array__Int__Spacestation__module.bool_eq,
+    function first = first, function last = last, type index_rep_type = int
+
+end
+
+(* Module for axiomatizing the record theory associated to type "monitoringstation" defined at spacestation.ads:10, created in Why.Gen.Records.Create_Rep_Record_Theory_If_Needed *)
+module Spacestation__monitoringstation__rep
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Spacestation__airlockstatus
+  use        Spacestation__airlockstatus__rep
+  use        Spacestation__orbitheight
+  use        Spacestation__orbitheight__rep
+  use        Spacestation__modulerange
+  use        Spacestation__modulerange__rep
+  use        Spacestation__modulestack
+  use        Array__Int__Spacestation__module
+  use        Array__Int__Spacestation__module
+  use        Array__Int__Spacestation__module
+  use        Array__Int__Spacestation__module
+  
+  type __split_fields  = { [model_trace:.1153]
+                           [name:airLock1]rec__spacestation__monitoringstation__airlock1 : Spacestation__airlockstatus.airlockstatus;
+                           [model_trace:.1159]
+                           [name:airLock2]rec__spacestation__monitoringstation__airlock2 : Spacestation__airlockstatus.airlockstatus;
+                           [model_trace:.1164]
+                           [name:height]rec__spacestation__monitoringstation__height : Spacestation__orbitheight.orbitheight;
+                           [name:modules]
+                           [model_trace:.1169]rec__spacestation__monitoringstation__modules : Array__Int__Spacestation__module.map;
+                           [model_trace:.1173]
+                           [name:modulesCount]rec__spacestation__monitoringstation__modulescount : Spacestation__modulerange.modulerange }
+  
+  function [model_trace:.1153] [name:airLock1] 
+    __split_fields_rec__spacestation__monitoringstation__airlock1__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    Spacestation__airlockstatus.airlockstatus = a.rec__spacestation__monitoringstation__airlock1
+  
+  meta model_projection function __split_fields_rec__spacestation__monitoringstation__airlock1__projection
+  
+  meta inline:no function __split_fields_rec__spacestation__monitoringstation__airlock1__projection
+  
+  function [model_trace:.1159] [name:airLock2] 
+    __split_fields_rec__spacestation__monitoringstation__airlock2__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    Spacestation__airlockstatus.airlockstatus = a.rec__spacestation__monitoringstation__airlock2
+  
+  meta model_projection function __split_fields_rec__spacestation__monitoringstation__airlock2__projection
+  
+  meta inline:no function __split_fields_rec__spacestation__monitoringstation__airlock2__projection
+  
+  function [model_trace:.1164] [name:height] 
+    __split_fields_rec__spacestation__monitoringstation__height__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    Spacestation__orbitheight.orbitheight = a.rec__spacestation__monitoringstation__height
+  
+  meta model_projection function __split_fields_rec__spacestation__monitoringstation__height__projection
+  
+  meta inline:no function __split_fields_rec__spacestation__monitoringstation__height__projection
+  
+  function [name:modules] [model_trace:.1169] 
+    __split_fields_rec__spacestation__monitoringstation__modules__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    Array__Int__Spacestation__module.map = a.rec__spacestation__monitoringstation__modules
+  
+  meta model_projection function __split_fields_rec__spacestation__monitoringstation__modules__projection
+  
+  meta inline:no function __split_fields_rec__spacestation__monitoringstation__modules__projection
+  
+  function [model_trace:.1173] [name:modulesCount] 
+    __split_fields_rec__spacestation__monitoringstation__modulescount__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    Spacestation__modulerange.modulerange = a.rec__spacestation__monitoringstation__modulescount
+  
+  meta model_projection function __split_fields_rec__spacestation__monitoringstation__modulescount__projection
+  
+  meta inline:no function __split_fields_rec__spacestation__monitoringstation__modulescount__projection
+  
+  type __split_fields__ref  = { mutable __split_fields__content : __split_fields }
+  
+  function   __split_fields__ref___split_fields__content__projection
+    (a : __split_fields__ref) requires {  } ensures  {  } returns
+    __split_fields = a.__split_fields__content
+  
+  meta model_projection function __split_fields__ref___split_fields__content__projection
+  
+  meta inline:no function __split_fields__ref___split_fields__content__projection
+  
+  function   __split_fields__havoc (x : __split_fields__ref) requires {  }
+    ensures  {  } returns unit
+  
+  type __rep  = { __split_fields : __split_fields }
+  
+  function   __rep___split_fields__projection (a : __rep) requires {  }
+    ensures  {  } returns __split_fields = a.__split_fields
+  
+  meta model_projection function __rep___split_fields__projection
+  
+  meta inline:no function __rep___split_fields__projection
+  
+  function   to_base (a : __rep) requires { True } ensures  { True } returns
+    __rep = a
+  
+  function   of_base (a : __rep) requires { True } ensures  { True } returns
+    __rep = a
+  
+  function   spacestation__monitoringstation__airlock1__pred (a : __rep)
+    requires { True } ensures  { True } returns  = True
+  
+  function   rec__spacestation__monitoringstation__airlock1_ (a : __rep)
+    requires { (spacestation__monitoringstation__airlock1__pred a) } ensures 
+    { (result
+         = a.__split_fields.rec__spacestation__monitoringstation__airlock1) }
+    returns Spacestation__airlockstatus.airlockstatus
+  
+  function   spacestation__monitoringstation__airlock2__pred (a : __rep)
+    requires { True } ensures  { True } returns  = True
+  
+  function   rec__spacestation__monitoringstation__airlock2_ (a : __rep)
+    requires { (spacestation__monitoringstation__airlock2__pred a) } ensures 
+    { (result
+         = a.__split_fields.rec__spacestation__monitoringstation__airlock2) }
+    returns Spacestation__airlockstatus.airlockstatus
+  
+  function   spacestation__monitoringstation__height__pred (a : __rep)
+    requires { True } ensures  { True } returns  = True
+  
+  function   rec__spacestation__monitoringstation__height_ (a : __rep)
+    requires { (spacestation__monitoringstation__height__pred a) } ensures 
+    { (result = a.__split_fields.rec__spacestation__monitoringstation__height) }
+    returns Spacestation__orbitheight.orbitheight
+  
+  function   spacestation__monitoringstation__modules__pred (a : __rep)
+    requires { True } ensures  { True } returns  = True
+  
+  function   rec__spacestation__monitoringstation__modules_ (a : __rep)
+    requires { (spacestation__monitoringstation__modules__pred a) } ensures 
+    { (result
+         = a.__split_fields.rec__spacestation__monitoringstation__modules) }
+    returns Array__Int__Spacestation__module.map
+  
+  function   spacestation__monitoringstation__modulescount__pred (a : __rep)
+    requires { True } ensures  { True } returns  = True
+  
+  function   rec__spacestation__monitoringstation__modulescount_ (a : __rep)
+    requires { (spacestation__monitoringstation__modulescount__pred a) }
+    ensures 
+    { (result
+         = a.__split_fields.rec__spacestation__monitoringstation__modulescount) }
+    returns Spacestation__modulerange.modulerange
+  
+  function   bool_eq (a : __rep b : __rep) requires { True } ensures 
+    { True } returns
+    bool = (if
+           (((Spacestation__airlockstatus__rep.to_rep
+                a.__split_fields.rec__spacestation__monitoringstation__airlock1)
+               = (Spacestation__airlockstatus__rep.to_rep
+                    b.__split_fields.rec__spacestation__monitoringstation__airlock1))
+              /\
+              ((Spacestation__airlockstatus__rep.to_rep
+                  a.__split_fields.rec__spacestation__monitoringstation__airlock2)
+                 = (Spacestation__airlockstatus__rep.to_rep
+                      b.__split_fields.rec__spacestation__monitoringstation__airlock2))
+              /\
+              ((Spacestation__orbitheight__rep.to_rep
+                  a.__split_fields.rec__spacestation__monitoringstation__height)
+                 = (Spacestation__orbitheight__rep.to_rep
+                      b.__split_fields.rec__spacestation__monitoringstation__height))
+              /\
+              (Spacestation__modulestack.bool_eq
+                 a.__split_fields.rec__spacestation__monitoringstation__modules
+                 b.__split_fields.rec__spacestation__monitoringstation__modules)
+              /\
+              ((Spacestation__modulerange__rep.to_rep
+                  a.__split_fields.rec__spacestation__monitoringstation__modulescount)
+                 = (Spacestation__modulerange__rep.to_rep
+                      b.__split_fields.rec__spacestation__monitoringstation__modulescount)))
+           then True  else False)
+
+end
+
+(* Module for axiomatizing type "monitoringstation" defined at spacestation.ads:10, created in Gnat2Why.Types.Translate_Type *)
+module Spacestation__monitoringstation
+  
+  use export Spacestation__monitoringstation__rep
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type monitoringstation  = --pp_transparent_type_definition NOT IMPLEMENTED
+  
+  function   value__size () requires {  } ensures  {  } returns int
+  
+  function   object__size () requires {  } ensures  {  } returns int
+  
+  function   alignment () requires {  } ensures  {  } returns int
+  
+  axiom value__size_axiom : ((value__size ) >= 0)
+  
+  axiom object__size_axiom : ((object__size ) >= 0)
+  
+  axiom alignment_axiom : ((alignment ) >= 0)
+  
+  function   spacestation__monitoringstation__airlock1__first__bit ()
+    requires {  } ensures  {  } returns int
+  
+  function   spacestation__monitoringstation__airlock1__last__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacestation__monitoringstation__airlock1__position () requires
+    {  } ensures  {  } returns int
+  
+  axiom spacestation__monitoringstation__airlock1__first__bit_axiom : 
+  ((spacestation__monitoringstation__airlock1__first__bit ) >= 0)
+  
+  axiom spacestation__monitoringstation__airlock1__last__bit_axiom : 
+  ((spacestation__monitoringstation__airlock1__last__bit )
+     > (spacestation__monitoringstation__airlock1__first__bit ))
+  
+  axiom spacestation__monitoringstation__airlock1__position_axiom : ((spacestation__monitoringstation__airlock1__position
+                                                                    ) >= 0)
+  
+  function   spacestation__monitoringstation__airlock2__first__bit ()
+    requires {  } ensures  {  } returns int
+  
+  function   spacestation__monitoringstation__airlock2__last__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacestation__monitoringstation__airlock2__position () requires
+    {  } ensures  {  } returns int
+  
+  axiom spacestation__monitoringstation__airlock2__first__bit_axiom : 
+  ((spacestation__monitoringstation__airlock2__first__bit ) >= 0)
+  
+  axiom spacestation__monitoringstation__airlock2__last__bit_axiom : 
+  ((spacestation__monitoringstation__airlock2__last__bit )
+     > (spacestation__monitoringstation__airlock2__first__bit ))
+  
+  axiom spacestation__monitoringstation__airlock2__position_axiom : ((spacestation__monitoringstation__airlock2__position
+                                                                    ) >= 0)
+  
+  function   spacestation__monitoringstation__height__first__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacestation__monitoringstation__height__last__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacestation__monitoringstation__height__position () requires
+    {  } ensures  {  } returns int
+  
+  axiom spacestation__monitoringstation__height__first__bit_axiom : ((spacestation__monitoringstation__height__first__bit
+                                                                    ) >= 0)
+  
+  axiom spacestation__monitoringstation__height__last__bit_axiom : ((spacestation__monitoringstation__height__last__bit
+                                                                    )
+                                                                    > (
+                                                                    spacestation__monitoringstation__height__first__bit
+                                                                    ))
+  
+  axiom spacestation__monitoringstation__height__position_axiom : ((spacestation__monitoringstation__height__position
+                                                                    ) >= 0)
+  
+  function   spacestation__monitoringstation__modules__first__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacestation__monitoringstation__modules__last__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacestation__monitoringstation__modules__position () requires
+    {  } ensures  {  } returns int
+  
+  axiom spacestation__monitoringstation__modules__first__bit_axiom : 
+  ((spacestation__monitoringstation__modules__first__bit ) >= 0)
+  
+  axiom spacestation__monitoringstation__modules__last__bit_axiom : ((spacestation__monitoringstation__modules__last__bit
+                                                                    )
+                                                                    > (spacestation__monitoringstation__modules__first__bit
+                                                                    ))
+  
+  axiom spacestation__monitoringstation__modules__position_axiom : ((spacestation__monitoringstation__modules__position
+                                                                    ) >= 0)
+  
+  function   spacestation__monitoringstation__modulescount__first__bit 
+    () requires {  } ensures  {  } returns int
+  
+  function   spacestation__monitoringstation__modulescount__last__bit 
+    () requires {  } ensures  {  } returns int
+  
+  function   spacestation__monitoringstation__modulescount__position 
+    () requires {  } ensures  {  } returns int
+  
+  axiom spacestation__monitoringstation__modulescount__first__bit_axiom : 
+  ((spacestation__monitoringstation__modulescount__first__bit ) >= 0)
+  
+  axiom spacestation__monitoringstation__modulescount__last__bit_axiom : 
+  ((spacestation__monitoringstation__modulescount__last__bit )
+     > (spacestation__monitoringstation__modulescount__first__bit ))
+  
+  axiom spacestation__monitoringstation__modulescount__position_axiom : 
+  ((spacestation__monitoringstation__modulescount__position ) >= 0)
+  
+  function   user_eq (a : monitoringstation b : monitoringstation) requires
+    { True } ensures  { True } returns bool
+  
+  function   dummy () requires {  } ensures  {  } returns monitoringstation
+  
+  type monitoringstation__ref  = { mutable monitoringstation__content : monitoringstation }
+  
+  function   monitoringstation__ref_monitoringstation__content__projection
+    (a : monitoringstation__ref) requires {  } ensures  {  } returns
+    monitoringstation = a.monitoringstation__content
+  
+  meta model_projection function monitoringstation__ref_monitoringstation__content__projection
+  
+  meta inline:no function monitoringstation__ref_monitoringstation__content__projection
+  
+  function   monitoringstation__havoc (x : monitoringstation__ref) requires
+    {  } ensures  {  } returns unit
+
+end
+
+(* Module for defining a ref holding the value of variable "solaris" defined at spacestation.ads:18, created in Gnat2Why.Decls.Translate_Variable *)
+module Spacestation__solaris
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Spacestation__monitoringstation
+  
+  val solaris__split_fields [name:solaris] [model_trace:1182]
+  [model_projected] [sloc:spacestation.ads:18]: Spacestation__monitoringstation.__split_fields
+
+end
+
+(* Module giving axioms for type "monitoringstation" defined at spacestation.ads:10, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Spacestation__monitoringstation___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacestation__monitoringstation
+  use        Spacestation__airlockstatus
+  use        Spacestation__airlockstatus__rep
+  use        Spacestation__orbitheight
+  use        Spacestation__orbitheight__rep
+  use        Spacestation__modulerange
+  use        Spacestation__modulerange__rep
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_218) : Spacestation__monitoringstation.monitoringstation
+    ([mlw:proxy_symbol] [introduced] temp___is_init_214) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_215) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_216) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_217) : bool) requires
+    { True } ensures  { True } returns  = True
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_220) : Spacestation__monitoringstation.monitoringstation
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_221) : bool)
+    requires { True } ensures  { True } returns
+     = ((if
+        (Spacestation__monitoringstation.spacestation__monitoringstation__airlock1__pred
+           ([mlw:proxy_symbol] [introduced] temp___expr_220))
+        then
+        (( (Spacestation__airlockstatus__rep.to_rep ([mlw:proxy_symbol]
+              [introduced] temp___expr_220).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__airlock1))
+           = ( 1))
+        ) /\
+          (if
+          (Spacestation__monitoringstation.spacestation__monitoringstation__airlock2__pred
+             ([mlw:proxy_symbol] [introduced] temp___expr_220))
+          then
+          (( (Spacestation__airlockstatus__rep.to_rep ([mlw:proxy_symbol]
+                [introduced] temp___expr_220).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__airlock2))
+             = ( 1))
+          ) /\
+          (if
+          (Spacestation__monitoringstation.spacestation__monitoringstation__height__pred
+             ([mlw:proxy_symbol] [introduced] temp___expr_220))
+          then
+          (( (Spacestation__orbitheight__rep.to_rep ([mlw:proxy_symbol]
+                [introduced] temp___expr_220).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__height))
+             = ( 400))
+          ) /\
+          (if
+          (Spacestation__monitoringstation.spacestation__monitoringstation__modulescount__pred
+             ([mlw:proxy_symbol] [introduced] temp___expr_220))
+          then
+          (( (Spacestation__modulerange__rep.to_rep ([mlw:proxy_symbol]
+                [introduced] temp___expr_220).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__modulescount))
+             = ( 1))
+          ))
+
+end
+
+(* Module for possibly declaring a logic function for "airlockinvariant" defined at spacestation.ads:20, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Spacestation__airlockinvariant
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Spacestation__monitoringstation
+  
+  function   airlockinvariant
+    (Spacestation__solaris___solaris__split_fields___ : Spacestation__monitoringstation.__split_fields)
+    requires { True } ensures  { True } returns bool
+  
+  function   airlockinvariant__function_guard
+    (([mlw:proxy_symbol] [introduced] temp___result_162) : bool
+    Spacestation__solaris___solaris__split_fields___ : Spacestation__monitoringstation.__split_fields)
+    requires { True } ensures  { True } returns bool
+
+end
+
+(* Module giving a program function and a defining axiom for the expression function "airlockinvariant" defined at spacestation.ads:20, created in Gnat2Why.Subprograms.Translate_Expression_Function_Body *)
+module Spacestation__airlockinvariant___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacestation__solaris
+  use        Spacestation__monitoringstation
+  use        Spacestation__monitoringstation___axiom
+  use        Spacestation__airlockinvariant
+  use        Spacestation__airlockstatus
+  use        Spacestation__airlockstatus__rep
+  
+  function   airlockinvariant (__void_param : unit) requires { True }
+    ensures 
+    { ((result
+          = (Spacestation__airlockinvariant.airlockinvariant
+               !Spacestation__solaris.solaris__split_fields)) /\
+         (Spacestation__airlockinvariant.airlockinvariant__function_guard
+            result !Spacestation__solaris.solaris__split_fields) /\
+         (result
+            = (((Spacestation__airlockstatus__rep.to_rep
+                   ( --pp_record_aggregate NOT IMPLEMENTED).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__airlock1)
+                  = 1) \/
+                 ((Spacestation__airlockstatus__rep.to_rep
+                     ( --pp_record_aggregate NOT IMPLEMENTED).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__airlock2)
+                    = 1)))) } returns bool
+  
+  axiom airlockinvariant__post_axiom : --pp_universal_quantif NOT IMPLEMENTED
+  
+  axiom airlockinvariant__def_axiom : --pp_universal_quantif NOT IMPLEMENTED
+
+end
+
+(* Module for possibly declaring a logic function for "orbitheightinvariant" defined at spacestation.ads:23, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Spacestation__orbitheightinvariant
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Spacestation__monitoringstation
+  
+  function   orbitheightinvariant
+    (Spacestation__solaris___solaris__split_fields___ : Spacestation__monitoringstation.__split_fields)
+    requires { True } ensures  { True } returns bool
+  
+  function   orbitheightinvariant__function_guard
+    (([mlw:proxy_symbol] [introduced] temp___result_163) : bool
+    Spacestation__solaris___solaris__split_fields___ : Spacestation__monitoringstation.__split_fields)
+    requires { True } ensures  { True } returns bool
+
+end
+
+(* Module giving a program function and a defining axiom for the expression function "orbitheightinvariant" defined at spacestation.ads:23, created in Gnat2Why.Subprograms.Translate_Expression_Function_Body *)
+module Spacestation__orbitheightinvariant___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacestation__solaris
+  use        Spacestation__monitoringstation
+  use        Spacestation__monitoringstation___axiom
+  use        Spacestation__orbitheightinvariant
+  use        Spacestation__orbitheight
+  use        Spacestation__orbitheight__rep
+  
+  function   orbitheightinvariant (__void_param : unit) requires { True }
+    ensures 
+    { ((result
+          = (Spacestation__orbitheightinvariant.orbitheightinvariant
+               !Spacestation__solaris.solaris__split_fields)) /\
+         (Spacestation__orbitheightinvariant.orbitheightinvariant__function_guard
+            result !Spacestation__solaris.solaris__split_fields) /\
+         (result
+            = (((Spacestation__orbitheight__rep.to_rep
+                   ( --pp_record_aggregate NOT IMPLEMENTED).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__height)
+                  >= 350) /\
+                 ((Spacestation__orbitheight__rep.to_rep
+                     ( --pp_record_aggregate NOT IMPLEMENTED).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__height)
+                    <= 450)))) } returns bool
+  
+  axiom orbitheightinvariant__post_axiom : --pp_universal_quantif NOT IMPLEMENTED
+  
+  axiom orbitheightinvariant__def_axiom : --pp_universal_quantif NOT IMPLEMENTED
+
+end
+
+(* Module for possibly declaring a logic function for "full" defined at spacestation.ads:89, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Spacestation__full
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Spacestation__monitoringstation
+  
+  function   full
+    (Spacestation__solaris___solaris__split_fields___ : Spacestation__monitoringstation.__split_fields)
+    requires { True } ensures  { True } returns bool
+  
+  function   full__function_guard
+    (([mlw:proxy_symbol] [introduced] temp___result_165) : bool
+    Spacestation__solaris___solaris__split_fields___ : Spacestation__monitoringstation.__split_fields)
+    requires { True } ensures  { True } returns bool
+
+end
+
+(* Module giving a program function and a defining axiom for the expression function "full" defined at spacestation.ads:89, created in Gnat2Why.Subprograms.Translate_Expression_Function_Body *)
+module Spacestation__full___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacestation__solaris
+  use        Spacestation__monitoringstation
+  use        Spacestation__monitoringstation___axiom
+  use        Spacestation__full
+  use        Spacestation__modulerange
+  use        Spacestation__modulerange__rep
+  
+  function   full (__void_param : unit) requires { True } ensures 
+    { ((result
+          = (Spacestation__full.full
+               !Spacestation__solaris.solaris__split_fields)) /\
+         (Spacestation__full.full__function_guard result
+            !Spacestation__solaris.solaris__split_fields) /\
+         (result
+            = ((Spacestation__modulerange__rep.to_rep
+                  ( --pp_record_aggregate NOT IMPLEMENTED).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__modulescount)
+                 = 20))) } returns bool
+  
+  axiom full__post_axiom : --pp_universal_quantif NOT IMPLEMENTED
+  
+  axiom full__def_axiom : --pp_universal_quantif NOT IMPLEMENTED
+
+end
+
+(* Module for defining a ref holding the value of variable "newmodule" defined at spacestation.adb:41, created in Gnat2Why.Decls.Translate_Variable *)
+module Spacestation__pushmodule__newmodule
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  val newmodule [model_trace:906] [model_projected]
+  [name:newModule] [sloc:spacestation.adb:41]: int
+
+end
+
+(* Module giving axioms for type "module" defined at spacestation.ads:5, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Spacestation__module___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacestation__module
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_187) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_183) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_184) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_185) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_186) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_183) = True) \/
+          (Spacestation__module.first <= Spacestation__module.last))
+       then
+       (Spacestation__module.dynamic_property Spacestation__module.first
+          Spacestation__module.last ([mlw:proxy_symbol]
+          [introduced] temp___expr_187))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_188) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_189) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving an empty axiom for the entity "newmodule" defined at spacestation.adb:41, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Spacestation__pushmodule__newmodule___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module giving axioms for type "airlockstatus" defined at spacestation.ads:3, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Spacestation__airlockstatus___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacestation__airlockstatus
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_173) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_169) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_170) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_171) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_172) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_169) = True) \/
+          (Spacestation__airlockstatus.first
+             <= Spacestation__airlockstatus.last))
+       then
+       (Spacestation__airlockstatus.dynamic_property
+          Spacestation__airlockstatus.first Spacestation__airlockstatus.last
+          ([mlw:proxy_symbol] [introduced] temp___expr_173))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_174) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_175) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving axioms for type "orbitheight" defined at spacestation.ads:4, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Spacestation__orbitheight___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacestation__orbitheight
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_180) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_176) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_177) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_178) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_179) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_176) = True) \/
+          (Spacestation__orbitheight.first <= Spacestation__orbitheight.last))
+       then
+       (Spacestation__orbitheight.dynamic_property
+          Spacestation__orbitheight.first Spacestation__orbitheight.last
+          ([mlw:proxy_symbol] [introduced] temp___expr_180))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_181) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_182) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving axioms for type "modulerange" defined at spacestation.ads:6, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Spacestation__modulerange___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacestation__modulerange
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_194) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_190) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_191) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_192) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_193) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_190) = True) \/
+          (Spacestation__modulerange.first <= Spacestation__modulerange.last))
+       then
+       (Spacestation__modulerange.dynamic_property
+          Spacestation__modulerange.first Spacestation__modulerange.last
+          ([mlw:proxy_symbol] [introduced] temp___expr_194))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_195) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_196) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving axioms for type "modulestack" defined at spacestation.ads:7, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Spacestation__modulestack___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Array__Int__Spacestation__module
+  use        Array__Int__Spacestation__module
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_201) : Array__Int__Spacestation__module.map
+    ([mlw:proxy_symbol] [introduced] temp___is_init_197) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_198) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_199) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_200) : bool) requires
+    { True } ensures  { True } returns  = True
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_203) : Array__Int__Spacestation__module.map
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_204) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving an empty axiom for the entity "solaris" defined at spacestation.ads:18, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Spacestation__solaris___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "pushmodule" defined at spacestation.ads:91, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Spacestation__pushmodule__subprogram_def
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        _gnatprove_standard.Boolean
+  use        Spacestation__solaris
+  use        Spacestation__monitoringstation
+  use        Spacestation__monitoringstation___axiom
+  use        Spacestation__airlockinvariant
+  use        Spacestation__airlockinvariant___axiom
+  use        Spacestation__orbitheightinvariant
+  use        Spacestation__orbitheightinvariant___axiom
+  use        Spacestation__full
+  use        Spacestation__full___axiom
+  use        Spacestation__pushmodule__newmodule
+  use        Spacestation__module
+  use        Spacestation__module___axiom
+  use        Spacestation__module__rep
+  use        Spacestation__modulerange
+  use        Spacestation__modulerange__rep
+  use        Array__Int__Spacestation__module
+  use        Array__Int__Spacestation__module
+  use        Array__Int__Spacestation__module
+  use        Spacestation__pushmodule__newmodule___axiom
+  use        Spacestation__airlockstatus___axiom
+  use        Spacestation__orbitheight___axiom
+  use        Spacestation__module___axiom
+  use        Spacestation__modulerange___axiom
+  use        Spacestation__modulestack___axiom
+  use        Spacestation__monitoringstation___axiom
+  use        Spacestation__solaris___axiom
+  use        Spacestation__airlockinvariant___axiom
+  use        Spacestation__orbitheightinvariant___axiom
+  use        Spacestation__full___axiom
+  
+  function [GP_Subp:spacestation.ads:91] [sloc:spacestation.ads:91] def
+    (__void_param : unit) requires { True } ensures 
+    { ([sloc:spacestation.ads:96] ([GP_Reason:VC_POSTCONDITION]
+                                  [comment:     Post => solaris.modulesCount = solaris.modulesCount'Old + 1              ^ spacestation.ads:96:14:VC_POSTCONDITION]
+                                  [model_vc_post] [GP_Shape:pragargs__and]
+                                  [GP_Sloc:spacestation.ads:96:14]
+                                  [GP_Id:9] ((([GP_Pretty_Ada:1495]
+                                              [GP_Sloc:spacestation.ads:96:14] (
+                                              (Spacestation__modulerange__rep.to_rep
+                                                 ( --pp_record_aggregate NOT IMPLEMENTED).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__modulescount)
+                                                = ((Spacestation__modulerange__rep.to_rep
+                                                      --pp_tagged NOT IMPLEMENTED)
+                                                     + 1))) /\
+                                                ([GP_Sloc:spacestation.ads:97:10]
+                                                [GP_Pretty_Ada:1502] (
+                                                (epsilon ([mlw:proxy_symbol]
+                                                [introduced] temp___result_393) : bool {
+                                                ((([mlw:proxy_symbol]
+                                                    [introduced] temp___result_393)
+                                                    = (Spacestation__airlockinvariant.airlockinvariant
+                                                         !Spacestation__solaris.solaris__split_fields))
+                                                   /\
+                                                   (Spacestation__airlockinvariant.airlockinvariant__function_guard
+                                                      ([mlw:proxy_symbol]
+                                                      [introduced] temp___result_393)
+                                                      !Spacestation__solaris.solaris__split_fields))})
+                                                  = True))) /\
+                                               ([GP_Pretty_Ada:1504]
+                                               [GP_Sloc:spacestation.ads:98:10] (
+                                               (epsilon ([mlw:proxy_symbol]
+                                               [introduced] temp___result_394) : bool {
+                                               ((([mlw:proxy_symbol]
+                                                   [introduced] temp___result_394)
+                                                   = (Spacestation__orbitheightinvariant.orbitheightinvariant
+                                                        !Spacestation__solaris.solaris__split_fields))
+                                                  /\
+                                                  (Spacestation__orbitheightinvariant.orbitheightinvariant__function_guard
+                                                     ([mlw:proxy_symbol]
+                                                     [introduced] temp___result_394)
+                                                     !Spacestation__solaris.solaris__split_fields))})
+                                                 = True))))) } returns
+     = (* Assume dynamic invariants of inputs of the subprogram spacestation.ads:91 *);
+        assume
+        { (Spacestation__monitoringstation___axiom.dynamic_invariant
+             --pp_record_aggregate NOT IMPLEMENTED True False True True) };
+        (* Assume moved pointers in outputs of the subprogram spacestation.ads:91 *);
+        (* Check for RTE in the Pre of the subprogram spacestation.ads:91 *);
+        abstract ensures
+        { True } begin  (let _ =
+                       (_gnatprove_standard.Boolean.andb
+                          (_gnatprove_standard.Boolean.andb
+                             --pp_not NOT IMPLEMENTED
+                             (Spacestation__airlockinvariant___axiom.airlockinvariant
+                                ()))
+                          (Spacestation__orbitheightinvariant___axiom.orbitheightinvariant
+                             ()))
+                       in ())  end;
+        (* Assume Pre of the subprogram spacestation.ads:91 *);
+        assume
+        { ((([GP_Pretty_Ada:1482] --pp_not NOT IMPLEMENTED) /\
+              ([GP_Pretty_Ada:1484] ((epsilon ([mlw:proxy_symbol]
+                                     [introduced] temp___result_391) : bool {
+                                     ((([mlw:proxy_symbol]
+                                         [introduced] temp___result_391)
+                                         = (Spacestation__airlockinvariant.airlockinvariant
+                                              !Spacestation__solaris.solaris__split_fields))
+                                        /\
+                                        (Spacestation__airlockinvariant.airlockinvariant__function_guard
+                                           ([mlw:proxy_symbol]
+                                           [introduced] temp___result_391)
+                                           !Spacestation__solaris.solaris__split_fields))})
+                                       = True))) /\
+             ([GP_Pretty_Ada:1486] ((epsilon ([mlw:proxy_symbol]
+                                    [introduced] temp___result_392) : bool {
+                                    ((([mlw:proxy_symbol]
+                                        [introduced] temp___result_392)
+                                        = (Spacestation__orbitheightinvariant.orbitheightinvariant
+                                             !Spacestation__solaris.solaris__split_fields))
+                                       /\
+                                       (Spacestation__orbitheightinvariant.orbitheightinvariant__function_guard
+                                          ([mlw:proxy_symbol]
+                                          [introduced] temp___result_392)
+                                          !Spacestation__solaris.solaris__split_fields))})
+                                      = True))) };
+        (let ([mlw:proxy_symbol] [introduced] temp___old_388) =
+        ( (Spacestation__modulerange__rep.to_rep
+             ( --pp_record_aggregate NOT IMPLEMENTED).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__modulescount))
+        in (try
+        ();
+          ([sloc:spacestation.adb:41] (
+          Spacestation__pushmodule__newmodule.newmodule := ( 0));
+          assume
+          { (Spacestation__module___axiom.dynamic_invariant
+               !Spacestation__pushmodule__newmodule.newmodule True False True
+               True) });
+          ();
+          ([GP_Sloc:spacestation.adb:43:7] ([sloc:spacestation.adb:43] ()));
+          ([GP_Sloc:spacestation.adb:43:31] ([sloc:spacestation.adb:43] ()));
+          ([GP_Sloc:spacestation.adb:43:28] ([sloc:spacestation.adb:43] (let ([mlw:proxy_symbol]
+                                            [introduced] temp___382) =
+                                            (let ([mlw:proxy_symbol]
+                                              [introduced] temp___381) =
+                                              ( --pp_record_aggregate NOT IMPLEMENTED)
+                                              in abstract ensures
+                                              { True } begin  (let _ =
+                                                             ([mlw:proxy_symbol]
+                                                               [introduced] temp___381).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__modulescount
+                                                             in ())  end;
+                                              --pp_record_update NOT IMPLEMENTED)
+                                            in (
+                                            Spacestation__solaris.solaris__split_fields
+                                            :=
+                                            ([mlw:proxy_symbol]
+                                              [introduced] temp___382).Spacestation__monitoringstation.__split_fields))));
+          ([GP_Sloc:spacestation.adb:44:7] ([sloc:spacestation.adb:44] ()));
+          ([GP_Sloc:spacestation.adb:44:24] ([sloc:spacestation.adb:44] ()));
+          ([GP_Sloc:spacestation.adb:44:49] ([sloc:spacestation.adb:44] ()));
+          ([GP_Sloc:spacestation.adb:44:46] ([sloc:spacestation.adb:44] (let ([mlw:proxy_symbol]
+                                            [introduced] temp___386) =
+                                            (let ([mlw:proxy_symbol]
+                                              [introduced] temp___385) =
+                                              ( --pp_record_aggregate NOT IMPLEMENTED)
+                                              in abstract ensures
+                                              { True } begin  (let _ =
+                                                             ([mlw:proxy_symbol]
+                                                               [introduced] temp___385).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__modules
+                                                             in ())  end;
+                                              --pp_record_update NOT IMPLEMENTED)
+                                            in (
+                                            Spacestation__solaris.solaris__split_fields
+                                            :=
+                                            ([mlw:proxy_symbol]
+                                              [introduced] temp___386).Spacestation__monitoringstation.__split_fields))));
+          raise Return__exc with | Return__exc  -> ());
+        abstract ensures
+        { True } begin  (let _ =
+                       (_gnatprove_standard.Boolean.andb
+                          (_gnatprove_standard.Boolean.andb
+                             ((Spacestation__modulerange__rep.to_rep
+                                 ( --pp_record_aggregate NOT IMPLEMENTED).Spacestation__monitoringstation.__split_fields.Spacestation__monitoringstation.rec__spacestation__monitoringstation__modulescount)
+                                = (([mlw:proxy_symbol]
+                                     [introduced] temp___old_388) + 1))
+                             (Spacestation__airlockinvariant___axiom.airlockinvariant
+                                ()))
+                          (Spacestation__orbitheightinvariant___axiom.orbitheightinvariant
+                             ()))
+                       in ())  end)
+
+end

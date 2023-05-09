@@ -1,0 +1,2 @@
+spacestation.ads:76:10: medium: postcondition might fail, cannot prove (OrbitHeightInvariant)[#1]
+spacestation.ads:85:10: medium: postcondition might fail, cannot prove (OrbitHeightInvariant)[#0]

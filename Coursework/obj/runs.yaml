@@ -1362,3 +1362,150 @@
     '
   output_parser: GNATprove_Parser
   timestamp: '2023-05-07T01:38:44.295000'
+'2023-05-09T02:32:29.652000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-09T02:32:29.652000'
+'2023-05-09T03:13:47.024000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacestation.adb:49:52: medium: range check might fail [reason for check: result
+    of subtraction must fit in the target type of the assignment][#0]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-09T03:13:47.024000'
+'2023-05-09T03:14:32.205000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-09T03:14:32.205000'
+'2023-05-09T03:18:56.160000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-09T03:18:56.160000'
+'2023-05-09T03:19:16.822000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-09T03:19:16.822000'
+'2023-05-09T04:45:42.290000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacestation.ads:76:10: medium: postcondition might fail, cannot prove (OrbitHeightInvariant)[#1]
+
+    spacestation.ads:85:10: medium: postcondition might fail, cannot prove (OrbitHeightInvariant)[#0]
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-09T04:45:42.290000'
+'2023-05-09T04:46:38.344000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-09T04:46:38.344000'
+'2023-05-09T05:42:09.264000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-09T05:42:09.264000'
+'2023-05-09T05:45:24.002000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-09T05:45:24.002000'
+'2023-05-09T05:48:03.480000':
+  category: GNATprove
+  files:
+  - C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\steph\Desktop\FASE_CW\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-09T05:48:03.480000'

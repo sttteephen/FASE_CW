@@ -1,0 +1,42 @@
+Summary of SPARK analysis
+=========================
+
+----------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   CodePeer      Provers   Justified   Unproved
+----------------------------------------------------------------------------------------------
+Data Dependencies                 9           9          .            .           .          .
+Flow Dependencies                 .           .          .            .           .          .
+Initialization                    6           1          .            .           .          5
+Non-Aliasing                      .           .          .            .           .          .
+Run-time Checks                  14           .          .    14 (CVC4)           .          .
+Assertions                        .           .          .            .           .          .
+Functional Contracts              9           .          .     7 (CVC4)           .          2
+LSP Verification                  .           .          .            .           .          .
+Termination                       .           .          .            .           .          .
+Concurrency                       .           .          .            .           .          .
+----------------------------------------------------------------------------------------------
+Total                            38    10 (26%)          .     21 (55%)           .    7 (18%)
+
+
+max steps used for successful proof: 1
+
+Analyzed 2 units
+in unit main, 1 subprograms and packages out of 1 analyzed
+  Main at main.adb:4 flow analyzed (0 errors, 5 checks and 0 warnings) and proved (0 checks)
+in unit spacestation, 16 subprograms and packages out of 16 analyzed
+  SpaceStation at spacestation.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  SpaceStation.AirLockInvariant at spacestation.ads:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  SpaceStation.Full at spacestation.ads:91 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  SpaceStation.LastModule at spacestation.ads:89 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  SpaceStation.OrbitHeightInvariant at spacestation.ads:26 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  SpaceStation.closeAirLock1 at spacestation.ads:51 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  SpaceStation.closeAirLock2 at spacestation.ads:59 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  SpaceStation.crewMove at spacestation.ads:117 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (11 checks)
+  SpaceStation.decreaseHeight at spacestation.ads:78 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 1 checks out of 2 proved
+  SpaceStation.increaseHeight at spacestation.ads:69 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 1 checks out of 2 proved
+  SpaceStation.openAirLock1 at spacestation.ads:31 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  SpaceStation.openAirLock2 at spacestation.ads:41 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  SpaceStation.popModule at spacestation.ads:102 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (2 checks)
+  SpaceStation.printStation at spacestation.ads:111 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  SpaceStation.pushModule at spacestation.ads:93 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (2 checks)
+  SpaceStation.spaceWalkSafe at spacestation.ads:114 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
