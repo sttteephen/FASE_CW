@@ -107,8 +107,6 @@ package SpaceStation with SPARK_Mode is
      Post => solaris.modulesCount = solaris.modulesCount'Old - 1
      and AirlockInvariant
      and OrbitHeightInvariant;
-       
-   procedure printStation;
    
    -- space walk stuff
    function spaceWalkSafe return Boolean is 

@@ -1,0 +1,136 @@
+{
+  "spark": [
+    {
+      "name": "Main",
+      "sloc": [
+        {
+          "file": "main.adb",
+          "line": 4
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "main.adb",
+      "line": 4,
+      "col": 11,
+      "rule": "UNINITIALIZED",
+      "severity": "low",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "main__flow__0.trace",
+      "msg_id": 0,
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 4,
+      "col": 11,
+      "rule": "UNINITIALIZED",
+      "severity": "low",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "main__flow__1.trace",
+      "msg_id": 1,
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 4,
+      "col": 11,
+      "rule": "UNINITIALIZED",
+      "severity": "low",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "main__flow__2.trace",
+      "msg_id": 2,
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 4,
+      "col": 11,
+      "rule": "UNINITIALIZED",
+      "severity": "low",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "main__flow__3.trace",
+      "msg_id": 3,
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 4,
+      "col": 11,
+      "rule": "UNINITIALIZED",
+      "severity": "medium",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 4,
+      "how_proved": "flow"
+    }
+  ],
+  "session_map": {
+  },
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "codepeer results": 1.38400006107986E-04,
+    "init_why_sections": 6.38200028333813E-04,
+    "globals (advanced)": 1.39330001547933E-02,
+    "flow analysis": 3.10229999013245E-03,
+    "marking": 1.27599996631034E-04,
+    "translation of standard": 3.95950023084879E-03,
+    "properties (advanced)": 5.41000008524861E-05,
+    "globals (basic)": 1.37285999953747E-02
+  }
+}

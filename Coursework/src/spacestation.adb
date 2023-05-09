@@ -49,19 +49,6 @@ package body SpaceStation with SPARK_Mode is
       solaris.modulesCount := solaris.modulesCount - 1;
    end popModule;
    
-   procedure printStation is
-   begin
-      Ada.Text_IO.Put (AirLockStatus'Image(solaris.airLock1));
-      Ada.Text_IO.Put (AirLockStatus'Image(solaris.airLock2));
-      Ada.Text_IO.Put (OrbitHeight'Image(solaris.height));
-      Ada.Text_IO.Put ("km");
-      Ada.Text_IO.Put ("|");
-      for I in ModuleRange'First..solaris.modulesCount loop
-         Ada.Text_IO.Put (Module'Image(solaris.modules(I)));
-      end loop;
-      New_Line;
-   end printStation;
-   
    
    -- space walk stuff
    procedure crewMove(moduleIndex : in ModuleRange; moveDir : in Move) is
